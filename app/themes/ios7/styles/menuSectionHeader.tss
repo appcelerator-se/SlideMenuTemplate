@@ -1,0 +1,5 @@
+".container": {
+	backgroundColor: "#242a37",
+	height: 25,
+	width: Ti.UI.FILL
+}

@@ -1,0 +1,38 @@
+<Alloy>
+	<View class="container">
+		<View id="btnProfile" class="menuHeader" page="profile">
+			<View class="headerBackground" touchEnabled="false" />
+			<Widget class="menuHeaderIcon" src="net.hoyohoyo.iconiclabel" icon="icon-user" touchEnabled="false" />
+			<Label class="white profile" touchEnabled="false">My Profile</Label>
+		</View>
+		<TableView id="tableView" class="container">
+			<TableViewSection headerView="menuSectionHeader">
+				<TableViewRow className="menuRow" page="home">
+					<Widget class="menuIcon" src="net.hoyohoyo.iconiclabel" icon="icon-home"/>
+					<Label>Home</Label>
+					<View class="white-line transparent" />
+				</TableViewRow>
+				<TableViewRow className="menuRow" page="briefcase">
+					<Widget class="menuIcon" src="net.hoyohoyo.iconiclabel" icon="icon-briefcase"/>
+					<Label>Briefcase</Label>
+					<View class="white-line transparent" />
+				</TableViewRow>
+				<TableViewRow className="menuRow" page="locations">
+					<Widget class="menuIcon" src="net.hoyohoyo.iconiclabel" icon="icon-map-marker" />
+					<Label>Locations</Label>
+					<View class="white-line transparent" />
+				</TableViewRow>
+				<TableViewRow className="menuRow" page="photos">
+					<Widget class="menuIcon" src="net.hoyohoyo.iconiclabel" icon="icon-picture" />
+					<Label>Photos</Label>
+					<View class="white-line transparent" />
+				</TableViewRow>
+			<TableViewSection>
+		</TableView>
+		<View id="btnSettings" class="footer" page="settings">
+			<View class="footer-background" touchEnabled="false"/>
+			<Widget class="menuHeaderIcon" src="net.hoyohoyo.iconiclabel" icon="icon-cog" touchEnabled="false"/>
+			<Label class="white profile" touchEnabled="false">Settings</Label>
+		</View>
+	</View>
+</Alloy>

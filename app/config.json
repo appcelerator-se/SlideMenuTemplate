@@ -1,0 +1,15 @@
+{
+    "global": {},
+    "env:development": {},
+    "env:test": {},
+    "env:production": {},
+    "os:ios": {
+    	"theme":"ios7"
+    },
+    "os:android": {
+    	"theme":"oldschool"
+    },
+    "dependencies": {
+        "net.hoyohoyo.iconiclabel": "1.3"
+    }
+}

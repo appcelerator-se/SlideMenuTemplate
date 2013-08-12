@@ -1,0 +1,71 @@
+".container": {
+	backgroundColor: "transparent",
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	layout:'vertical'
+},
+
+"TableView": {
+	backgroundColor: "transparent",
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	separatorColor: "#242a37"
+},
+
+"TableViewRow":{
+	backgroundColor: 'transparent',
+	height: 45,
+	width: Ti.UI.FILL,
+},
+
+"Label":{
+	font:{
+		fontFamily: "Helvetica Neue",
+		fontSize: 24
+	},
+	color: "#fff",
+	left: 50
+},
+
+".profile":{
+	font:{
+		fontSize: 28 
+	}
+},
+
+".headerBackground":{
+	backgroundColor: "#222",
+	opacity: 0.25
+},
+
+".menuHeader":{
+	backgroundColor: 'transparent',
+	width: Ti.UI.FILL,
+	height: 54
+},
+
+'.menuHeaderIcon':{
+	left: 10,
+	width: 30,
+	height: Ti.UI.SIZE,
+	textAlign: 'center',
+	font:{
+		fontFamily: 'FontAwesome', fontSize: 28
+	},
+	color: "#fff"
+},
+
+'.menuIcon':{
+	left: 10,
+	width: 30,
+	height: Ti.UI.SIZE,
+	textAlign: 'center',
+	font:{
+		fontFamily: 'FontAwesome', fontSize: 24
+	},
+	color: "#fff"
+},
+
+".white-line":{
+	bottom: 0
+}

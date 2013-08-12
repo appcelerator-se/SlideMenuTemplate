@@ -1,0 +1,91 @@
+".container": {
+	backgroundColor: "transparent",
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	layout: 'composite'
+},
+
+"TableView": {
+	backgroundColor: "transparent",
+	separatorColor: "transparent",
+	height: 200,
+	width: Ti.UI.FILL,
+	scrollable: false,
+	top:55
+},
+
+"TableViewRow":{
+	backgroundColor: 'transparent',
+	selectedBackgroundColor:'#222', //<-- want to use alpha so th
+	height: 45,
+	width: Ti.UI.FILL,
+},
+
+"Label":{
+	font:{
+		fontWeight: "normal",
+		fontFamily: "Helvetica Neue",
+		fontSize: 18
+	},
+	//color: "#7d8493" <-- Old School iOS
+	color: "#fff",
+	left: 50
+},
+
+".profile":{
+	font:{
+		fontSize: 20 
+	}
+},
+
+".header-background":{
+	backgroundColor: "#222",
+	opacity: 0.25
+},
+
+".footer-background":{
+	backgroundColor: "#0290ff",
+	opacity: 0.25
+},
+
+
+".menuHeader":{
+	backgroundColor: 'transparent',
+	width: Ti.UI.FILL,
+	height: 54,
+	top: 0
+},
+
+'.menuHeaderIcon':{
+	left: 10,
+	width: 30,
+	height: Ti.UI.SIZE,
+	textAlign: 'center',
+	font:{
+		fontFamily: 'FontAwesome', fontSize: 20 
+	},
+	color: "#fff"
+},
+
+".footer":{
+	backgroundColor: 'transparent',
+	width: Ti.UI.FILL,
+	height: 54,
+	bottom: 0
+}
+
+'.menuIcon':{
+	left: 10,
+	width: 30,
+	height: Ti.UI.SIZE,
+	textAlign: 'center',
+	font:{
+		fontFamily: 'FontAwesome', fontSize: 18 
+	},
+	//color: "#7d8493" <-- Old School iOS
+	color: "#fff"
+},
+
+".white-line":{
+	bottom: 0
+}

@@ -1,0 +1,12 @@
+".container": {
+	backgroundColor: "white"
+},
+
+"Label":{
+	left: "10dp",
+	right: "10dp",
+	top: "10dp",
+	font:{
+		fontSize: "14dp"
+	}
+}

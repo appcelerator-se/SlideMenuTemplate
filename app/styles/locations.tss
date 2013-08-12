@@ -1,0 +1,28 @@
+".container":{
+	layout:'vertical'
+}
+"#menuBar":{
+	backgroundColor: "#f5f6f9",
+	width: Ti.UI.FILL,
+	height: "50dp",
+	layout: "horizontal"
+},
+".tbButton":{
+	width: "33%",
+	height: "50dp"
+},
+"#statusBtn":{
+	width: "73dp",
+	height: "19dp",
+	image: "/images/statusbtn.png"
+},
+"#photoBtn":{
+	width: "73dp",
+	height: "19dp",
+	image: "/images/photobtn.png"
+},
+"#checkinBtn":{
+	width: "73dp",
+	height: "19dp",
+	image: "/images/checkinbtn.png"
+}
