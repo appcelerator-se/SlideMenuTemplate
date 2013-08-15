@@ -58,7 +58,6 @@ Alloy.Globals.App = {
 			
 			if( _controller && this.contentView) {
 				
-				
 				if( (this.currentController && (_controller !== this.currentController.getView().id)) // If the user is clicking on a different menu item
 					||  !this.currentController ) { // OR there is no defined current controller
 					
@@ -120,8 +119,11 @@ Alloy.Globals.App = {
 		
 		/**
 		 * showhidemenu  - Manages the function to hide or display the unerlying menu
+		 * @type {String} direction - optional. If you want to trigger the menu based on a swipe, pass in the
+		 * 							 string from the swipe gesture that represents direction and the function
+		 *  							 will determine if the menu should open based on state
 		 */
-		showhidemenu: function() {
+		showhidemenu: function(direction) {
 			/**
 			 * Use the actual screen dimensions for the calculations
 			 */
@@ -130,14 +132,19 @@ Alloy.Globals.App = {
 			/**
 			 * Animate the mainView x pixels based on the App Settings (see above) if it currently isn't open, if its open move it back to the left
 			 */
-			var l =  !this.menuVisible ? Alloy.Globals.App.Settings.menuWidth : 0; 
-			this.mainView.animate({
-				left: l,
-				duration:100
-			});
+			var l =  !this.menuVisible ? Alloy.Globals.App.Settings.menuWidth : 0;
 			
-			this.menuVisible = !this.menuVisible
-			
+			if( !direction || 								 // <- No swipe input - just open the menu
+				(direction === 'left' && this.menuVisible) ||  // <- If swiping left and the menu is open close it
+				(direction ==='right' && !this.menuVisible)) {  // <- If swiping right and the menu is closed, open it
+				
+				this.mainView.animate({
+					left: l,
+					duration:100
+				});
+				
+				this.menuVisible = !this.menuVisible
+			}
 		}
 	},
 	

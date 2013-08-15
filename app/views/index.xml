@@ -1,27 +1,31 @@
 <Alloy>
-	<!-- 
-		Application Window 
-		This application uses this as the main window of the application, all subsequent screens are loaded
-		as dynamic Ti.UI.Views (excluding the modal function)
+	<!--
+	Application Window
+	This application uses this as the main window of the application, all subsequent screens are loaded
+	as dynamic Ti.UI.Views (excluding the modal function)
 	-->
 	<Window class="container">
-		<!-- Hidden Menu -->	
-		<View id="menu" onClick="showhidemenu">
-			<Require src="menu"/>
-		</View>
-		<View id="page" class="vgroup fill">
-			<View id="navigationBar">
-				<View id="menubtn" onClick="showhidemenu">
-					<Widget class='icon' src="net.hoyohoyo.iconiclabel" icon="icon-reorder" touchEnabled="false"/>
-				</View>
-				<View id="topActions">
-					<ImageView class="topActionButton" id="friendsBtn" onClick="testclick"></ImageView>
-					<ImageView class="topActionButton" id="messagesBtn" onClick="testclick"></ImageView>
-					<ImageView class="topActionButton" id="notificationsBtn" onClick="testclick"></ImageView>
-				</View>
+		<View>
+			<!-- Hidden Menu -->
+			<View id="menu" onClick="showhidemenu">
+				<Require src="menu"/>
 			</View>
-			<View class="gray-line"></View>
-			<View id="mainWindow"></View>
+			<View class="shadow transparent"/>
+			<View id="page" class="vgroup fill">
+				
+				<View id="navigationBar" onSwipe="showhidemenu">
+					<View id="menubtn" onClick="showhidemenu">
+						<Widget class='icon' src="net.hoyohoyo.iconiclabel" icon="icon-reorder" touchEnabled="false"/>
+					</View>
+					<View id="topActions">
+						<ImageView class="topActionButton" id="friendsBtn" onClick="testclick"></ImageView>
+						<ImageView class="topActionButton" id="messagesBtn" onClick="testclick"></ImageView>
+						<ImageView class="topActionButton" id="notificationsBtn" onClick="testclick"></ImageView>
+					</View>
+				</View>
+				<View class="gray-line"></View>
+				<View id="mainWindow"></View>
+			</View>
 		</View>
 	</Window>
 </Alloy>

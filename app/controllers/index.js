@@ -24,8 +24,12 @@ $.index.open();
  * This function is tied to the click event on the navBar menuBtn element.
  * It is responsible for sliding the menu out and back
  */
-function showhidemenu(){
-	App.Navigator.showhidemenu();
+function showhidemenu(e){
+	var direction = null;
+	if(e){
+		direction = e.direction;
+	}
+	App.Navigator.showhidemenu(direction);
 }
 
 /**
@@ -34,5 +38,5 @@ function showhidemenu(){
  * @param {Object} e
  */
 function testclick(e){
-	alert(e.source.id+" clicked");
+	alert(e.source.id+" boo ya");
 }

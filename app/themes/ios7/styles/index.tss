@@ -9,9 +9,23 @@
 	height: Ti.UI.SIZE,
 	color: "#000"
 },
+".shadow":{
+	right: 0,
+	width: 58,
+	height: Ti.UI.FILL,
+	backgroundGradient: {
+		startPoint: {x:0, y: 0},
+		endPoint: {x: "100%", y: 0},
+		type: 'linear',
+		colors:[
+			{color: 'transparent', offset: 0.0},
+			{color: '#222', offset: 0.05}
+		]
+	}
+},
 "#page":{
 	backgroundColor: "#d6d6d6",
-	left: 0,
+	left: 0
 },
 
 "#mainWindow":{
@@ -35,6 +49,7 @@
 },
 "#navigationBar":{
 	backgroundColor: '#ae331f',
+	border:0,
 	width: Ti.UI.FILL,
 	height: "54dp"
 },

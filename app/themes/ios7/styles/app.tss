@@ -117,7 +117,7 @@
 ".gray-line":{
 	backgroundColor: "#9b9d9f",
 	width: Ti.UI.FILL,
-	height: 1	
+	height: 1,	
 },
 
 ".white-line":{
