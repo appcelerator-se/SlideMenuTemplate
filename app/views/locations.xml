@@ -11,6 +11,6 @@
 				<ImageView id="checkinBtn"></ImageView>
 			</View>
 		</View>
-		<View ns="Ti.Map" platform="ios"/>
+		<View ns="Ti.Map" />
 	</View>
 </Alloy>

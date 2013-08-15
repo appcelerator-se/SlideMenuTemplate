@@ -6,14 +6,9 @@ var  App = Alloy.Globals.App;
 App.Navigator.init({
 	mainView: $.page,	// <- The Top Level View
 	menuView: $.menu,   // <- The Underlying Menu 
-	contentView: $.mainWindow  // <- The content section of the main view that is linked to the Navigator.open() method
+	contentView: $.mainWindow,  // <- The content section of the main view that is linked to the Navigator.open() method
+	startPage: 'home'	// <- The page you want to start your application
 });
-
-/**
- * Open the view you wish to start your app 
- */
-App.Navigator.open("home");
-
 
 /**
  * Open the main application Window

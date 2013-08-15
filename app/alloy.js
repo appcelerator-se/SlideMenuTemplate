@@ -46,6 +46,8 @@ Alloy.Globals.App = {
 			this.mainView = _params.mainView;
 			this.contentView = _params.contentView;
 			Ti.API.debug("Navigator.init - complete");
+			
+			_params.startPage && this.open(_params.startPage);
 		},
 		
 		
