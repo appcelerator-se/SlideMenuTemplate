@@ -9,12 +9,6 @@
 	height: Ti.UI.SIZE,
 	color: "#000"
 },
-
-"#page":{
-	backgroundColor: "#d6d6d6",
-	left: 0,
-},
-
 ".shadow":{
 	right: 0,
 	width: 58,
@@ -29,6 +23,10 @@
 		]
 	}
 },
+"#page":{
+	backgroundColor: "#d6d6d6",
+	left: 0
+},
 
 "#mainWindow":{
 	height: Ti.UI.FILL,	
@@ -38,34 +36,42 @@
 "#menu":{
 	height: Ti.UI.FILL,
 	width: Ti.UI.FILL,
-	backgroundColor: "#2c323f", 
+	backgroundGradient:{
+		type: 'linear',
+		startPoint:{x:0, y:0},
+		endPoint: {x:0, y:'100%'},
+		colors: [
+			{color:'#8ab6e7', offset: 0.0},
+			{color: '#a19483', offset: 1.0}
+		]
+	},
 	left: 0	
 },
 "#navigationBar":{
-	backgroundImage: "/images/iconBarBG.png",
+	backgroundImage: null,
+	borderColor: '#ae331f',
+	backgroundColor: '#ae331f',
+	border:0,
 	width: Ti.UI.FILL,
-	height: "54dp",
-	border: 1,
-	borderColor: "maroon"
-},
-"#topActions":{
-	width:"150dp",
-	height:"50dp",
-	layout:"horizontal"
+	height: "54dp"
 },
 ".topActionButton":{
-	 height:"50dp",
-	 width:"50dp"
+	font:{
+		fontFamily: 'FontAwesome', fontSize: 20 
+	},
+	color: "#68160f",
+	height: 50,
+	width: 50,
+	textAlign:"center",
+	opacity: 0.5
 },
-"#friendsBtn":{
-	image:"/images/friendsbtn.png" 
+
+"#topActions":{
+	width: 150,
+	height:50,
+	layout:"horizontal"
 },
-"#messagesBtn":{
-	image:"/images/messagesbtn.png" 
-},
-"#notificationsBtn":{
-	image:"/images/notificationsbtn.png" 
-},
+
 "#menuBar":{
 	backgroundColor: "#f5f6f9",
 	width: Ti.UI.FILL,
@@ -73,33 +79,8 @@
 	layout: "horizontal"
 },
 
-".tbButton":{
-	width: "33%",
-	height: "50dp"
-},
-"#statusBtn":{
-	width: "73dp",
-	height: "19dp",
-	image: "/images/statusbtn.png"
-},
-"#photoBtn":{
-	width: "73dp",
-	height: "19dp",
-	image: "/images/photobtn.png"
-},
-"#checkinBtn":{
-	width: "73dp",
-	height: "19dp",
-	image: "/images/checkinbtn.png"
-},
 "#menubtn":{
-	left: 20,
+	left: 0,
 	width: "55dp",
 	height: "54dp"
-},
-"#chatbtn":{
-	width: "55dp",
-	height: "54dp",
-	right: 0,
-	image:"/chatbtn.png"
 }
