@@ -26,3 +26,5 @@ if(_args.filename){
 	
 	$.filename.text = pre+_args.filename+suf;
 }
+
+_args.author && _args.department && $.author.setText(_args.author + " in "+_args.department)

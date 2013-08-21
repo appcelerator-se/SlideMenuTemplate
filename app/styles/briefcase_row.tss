@@ -30,7 +30,15 @@
 		fontSize : "12dp"
 	}
 },
-"#status":{
+"#timeAgo":{
+	bottom: 50,
+	left: 80,
+	color: "#bbbbbb",
+	font: {
+		fontSize : "12dp"
+	}
+},
+"#author":{
 	width: Ti.UI.SIZE,
 	left: 80,
 	right: 5,
