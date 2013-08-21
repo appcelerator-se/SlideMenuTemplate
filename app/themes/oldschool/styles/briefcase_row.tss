@@ -1,0 +1,70 @@
+"#rowContainer":{
+	top:0,
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	backgroundColor: '#fff'
+}
+"#listRow":{
+	height: 120,
+	selectionStyle: "NONE",
+	className:"listRow"
+},
+"#filetype":{
+	 width:66,
+	 height:66,
+	 top:0,
+	 left:5,
+	 textAlign: 'center',
+	 font:{
+	 	fontSize: 48
+	 },
+	 color: "#666"
+},
+"#filename":{
+	top: 5,
+	left: 80,
+	color: "#941100",
+	font: {
+		fontSize : "16dp",
+		fontWeight: "bold"
+	}
+},
+"#timeAgo":{
+	top: 80,
+	left: 80,
+	color: "#bbbbbb",
+	font: {
+		fontSize : "12dp"
+	}
+},
+"#timeAgo":{
+	top: 60,
+	left: 80,
+	color: "#bbbbbb",
+	font: {
+		fontSize : "12dp"
+	}
+},
+"#author":{
+	width: Ti.UI.SIZE,
+	left: 80,
+	right: 5,
+	top: 25,
+	font: {
+		fontSize : 12
+	},
+	color: "#666"
+},
+"#bottomActions":{
+	top: 80,
+	height: 40,
+	width: Ti.UI.FILL,
+	backgroundColor: "#eff2f5",
+	layout: "horizontal"
+},
+".itemActionButton":{
+	width: "50%",
+	height: 40,
+	textAlign: 'center',
+	color: '#ae331f'
+}

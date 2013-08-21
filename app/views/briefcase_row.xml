@@ -1,5 +1,5 @@
 <Alloy>
-	<TableViewRow id='listRow' className='listRow'>
+	<TableViewRow id='listRow'>
 		<View id='rowContainer'>
 			<Widget id="filetype" class="icon black itemActionButton" src="net.hoyohoyo.iconiclabel" text="Like" icon="icon-file" touchEnabled="false" />
 			<Label id='filename'>Acme_Sales_Brochure.pdf</Label>
