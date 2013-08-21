@@ -49,8 +49,13 @@
 	layout:"horizontal"
 },
 ".topActionButton":{
-	 height:"50dp",
-	 width:"50dp"
+	font:{
+		fontFamily: 'FontAwesome', fontSize: 20 
+	},
+	color: "#68160f",
+	height: 50,
+	width: 50,
+	textAlign:"center"
 },
 "#friendsBtn":{
 	image:"/images/friendsbtn.png" 

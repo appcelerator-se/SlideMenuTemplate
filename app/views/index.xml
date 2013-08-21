@@ -10,20 +10,43 @@
 			<View id="menu" onClick="showhidemenu">
 				<Require src="menu"/>
 			</View>
+			
+			<!-- 
+			Simple Shadow element underlying the Primary View when the menu is open	
+			-->
 			<View class="shadow transparent"/>
+			
+			<!-- 
+			Primary View
+			The 'page' view acts as the primary view for the end user.
+			-->
 			<View id="page" class="vgroup fill">
 				
+				<!--
+				Cross Platform Navigation Bar
+				This view contains the button for opening and closing the primary view as well as supports a swipe 
+				gesture to open and close. Additionally, it contains top Action Buttons that could be used to access
+				functional aspects of the application	
+				-->	
 				<View id="navigationBar" onSwipe="showhidemenu">
 					<View id="menubtn" onClick="showhidemenu">
 						<Widget class='icon' src="net.hoyohoyo.iconiclabel" icon="icon-reorder" touchEnabled="false"/>
 					</View>
-					<View id="topActions">
-						<ImageView class="topActionButton" id="friendsBtn" onClick="testclick"></ImageView>
-						<ImageView class="topActionButton" id="messagesBtn" onClick="testclick"></ImageView>
-						<ImageView class="topActionButton" id="notificationsBtn" onClick="testclick"></ImageView>
+					<View id="topActions" class="fill"> 
+						<Widget class="topActionButton size left-buffer" src="net.hoyohoyo.iconiclabel" icon="icon-group" onClick="testclick" />
+						<Widget class="topActionButton size" src="net.hoyohoyo.iconiclabel" icon="icon-comments"  onClick="testclick" />
+						<Widget class="topActionButton size" src="net.hoyohoyo.iconiclabel" icon="icon-globe" onClick="testclick" />
 					</View>
 				</View>
 				<View class="gray-line"></View>
+				
+				<!--
+				Content View
+				This view is dynamic and loaded when the user selects a navigation element from the MenuView. It is 
+				updated directly from the Alloy.Globals.App.Navigator objects 'open' method.
+				
+				For this template there is no concept of a navigation stack - any view opened will subsequently close the current view.
+				-->
 				<View id="mainWindow"></View>
 			</View>
 		</View>
