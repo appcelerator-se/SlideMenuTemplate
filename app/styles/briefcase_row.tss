@@ -1,0 +1,54 @@
+"#listRow":{
+	height: "120dp",
+	selectionStyle: "NONE",
+	className:"listRow"
+},
+"#filetype":{
+	 width:66,
+	 height:66,
+	 top:0,
+	 left:5,
+	 textAlign: 'center',
+	 font:{
+	 	fontSize: 48
+	 }
+},
+"#filename":{
+	top: "5dp",
+	left: 80,
+	color: "#941100",
+	font: {
+		fontSize : "16dp",
+		fontWeight: "bold"
+	}
+},
+"#timeAgo":{
+	bottom: 50,
+	left: 80,
+	color: "#bbbbbb",
+	font: {
+		fontSize : "12dp"
+	}
+},
+"#status":{
+	width: Ti.UI.SIZE,
+	left: 80,
+	right: 5,
+	top: 25,
+	font: {
+		fontSize : 12
+	},
+	color: "#666"
+},
+"#bottomActions":{
+	bottom: 0,
+	height: 40,
+	width: Ti.UI.FILL,
+	backgroundColor: "#eff2f5",
+	layout: "horizontal"
+},
+".itemActionButton":{
+	width: "50%",
+	height: 40,
+	textAlign: 'center'
+}

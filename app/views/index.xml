@@ -30,12 +30,12 @@
 				-->	
 				<View id="navigationBar" onSwipe="showhidemenu">
 					<View id="menubtn" onClick="showhidemenu">
-						<Widget class='icon' src="net.hoyohoyo.iconiclabel" icon="icon-reorder" touchEnabled="false"/>
+						<Widget class='icon white' src="net.hoyohoyo.iconiclabel" icon="icon-reorder" touchEnabled="false"/>
 					</View>
 					<View id="topActions" class="fill"> 
-						<Widget id="friendsBtn" class="topActionButton size left-buffer" src="net.hoyohoyo.iconiclabel" icon="icon-group" click="testclick" />
-						<Widget id="messagesBtn" class="topActionButton size" src="net.hoyohoyo.iconiclabel" icon="icon-comments"  onClick="testclick" />
-						<Widget id="notificationsBtn" class="topActionButton size" src="net.hoyohoyo.iconiclabel" icon="icon-globe" onClick="testclick" />
+						<Widget id="friendsBtn" class="topActionButton size left-buffer" src="net.hoyohoyo.iconiclabel" icon="icon-group" />
+						<Widget id="messagesBtn" class="topActionButton size" src="net.hoyohoyo.iconiclabel" icon="icon-comments" />
+						<Widget id="notificationsBtn" class="topActionButton size" src="net.hoyohoyo.iconiclabel" icon="icon-globe" />
 					</View>
 				</View>
 				<View class="gray-line"></View>

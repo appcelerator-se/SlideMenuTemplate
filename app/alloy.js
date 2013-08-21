@@ -79,6 +79,10 @@ Alloy.Globals.App = {
 						this.currentController = null; // releases the memory
 						Ti.API.info('Old View Collected!');
 					}
+					/**
+					 * If the menu is visible, lets close the primary view
+					 */
+					this.menuVisible && this.showhidemenu();
 					
 					/**
 					 * Create a your new controller and add its view to the contentView
@@ -93,7 +97,7 @@ Alloy.Globals.App = {
 			
 			Ti.API.debug("Navigator.open - complete");
 		},
-		
+		 
 		modal: function(_controller, _options) {
 			
 			if(_controller){
@@ -126,6 +130,7 @@ Alloy.Globals.App = {
 		 *  							 will determine if the menu should open based on state
 		 */
 		showhidemenu: function(direction) {
+			Ti.API.info('showhidemenu');
 			/**
 			 * Use the actual screen dimensions for the calculations
 			 */

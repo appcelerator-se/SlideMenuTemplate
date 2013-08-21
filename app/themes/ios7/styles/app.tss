@@ -75,6 +75,11 @@
 	color: "#000"
 }
 
+".red":{
+	color: '#ae331f'
+}
+
+
 /**
  * 	Alert / Notification Styles 
  *  These should be used in conjunction with Views and/or labels
@@ -130,8 +135,7 @@
 '.icon':{
 	font:{
 		fontFamily: 'FontAwesome', fontSize: 24 
-	},
-	color: "#fff"
+	}
 }
 
 

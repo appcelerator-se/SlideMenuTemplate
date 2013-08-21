@@ -40,5 +40,5 @@ $.messagesBtn.addEventListener('click', testclick);
 $.notificationsBtn.addEventListener('click', testclick);
 
 function testclick(e){
-	alert(e.source.id + "clicked");
+	alert(e.source.id + " clicked");
 }

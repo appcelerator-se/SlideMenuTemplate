@@ -1,5 +1,7 @@
 <Alloy>
 	<View class="container">
-		<Label>Briefcase</Label>
+		<TableView id="tableView">
+			<Require src="briefcase_row" icon="music" filename="01track17"/>
+		</TableView>
 	</View>
 </Alloy>
