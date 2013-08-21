@@ -33,9 +33,9 @@
 						<Widget class='icon' src="net.hoyohoyo.iconiclabel" icon="icon-reorder" touchEnabled="false"/>
 					</View>
 					<View id="topActions" class="fill"> 
-						<Widget class="topActionButton size left-buffer" src="net.hoyohoyo.iconiclabel" icon="icon-group" onClick="testclick" />
-						<Widget class="topActionButton size" src="net.hoyohoyo.iconiclabel" icon="icon-comments"  onClick="testclick" />
-						<Widget class="topActionButton size" src="net.hoyohoyo.iconiclabel" icon="icon-globe" onClick="testclick" />
+						<Widget id="friendsBtn" class="topActionButton size left-buffer" src="net.hoyohoyo.iconiclabel" icon="icon-group" click="testclick" />
+						<Widget id="messagesBtn" class="topActionButton size" src="net.hoyohoyo.iconiclabel" icon="icon-comments"  onClick="testclick" />
+						<Widget id="notificationsBtn" class="topActionButton size" src="net.hoyohoyo.iconiclabel" icon="icon-globe" onClick="testclick" />
 					</View>
 				</View>
 				<View class="gray-line"></View>

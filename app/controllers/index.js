@@ -11,6 +11,7 @@ App.Navigator.init({
 	startPage: 'home'	// <- The page you want to start your application
 });
 
+
 /**
  * Open the main application Window
  */
@@ -33,6 +34,11 @@ function showhidemenu(e){
  * Initially linked to the topActions ImageViews.
  * @param {Object} e
  */
+
+$.friendsBtn.addEventListener('click', testclick);
+$.messagesBtn.addEventListener('click', testclick);
+$.notificationsBtn.addEventListener('click', testclick);
+
 function testclick(e){
-	alert(e.source.id+" boo ya");
+	alert(e.source.id + "clicked");
 }
