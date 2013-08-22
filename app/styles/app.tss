@@ -39,7 +39,30 @@
 
 ".hgroup":{
 	layout: 'horizontal'
-}
+},
+
+".buffer":{
+	top: 10,
+	left: 10,
+	right: 10,
+	bottom: 10
+},
+
+".top-buffer":{
+	top: 10
+},
+
+".left-buffer":{
+	left: 10
+},
+
+".right-buffer":{
+	right: 10
+},
+
+".bottom-buffer":{
+	bottom: 10
+},
 
 ".fill":{
 	height: Ti.UI.FILL,
@@ -49,6 +72,99 @@
 ".size":{
 	height: Ti.UI.SIZE,
 	width: Ti.UI.SIZE
+},
+
+".bottom":{
+	bottom: 0
+}
+
+".top":{
+	top: 0
+}
+/**
+ * Common Sizes
+ */
+
+".thumbnail":{
+	height: 75,
+	width: 75
+},
+
+".square100":{
+	height: 100,
+	width: 100
+},
+
+".square150":{
+	height: 150,
+	width: 150
+},
+
+".square200":{
+	height: 200,
+	width: 200
+},
+
+".square250":{
+	height: 250,
+	width: 250
+},
+
+/**
+ * 	Typography
+ */
+".h1":{
+	font:{
+		fontSize: 36
+	}
+},
+
+".h2":{
+	font:{
+		fontSize: 30
+	}
+},
+
+".h3":{
+	font:{
+		fontSize: 24
+	}
+},
+
+".h4":{
+	font:{
+		fontSize: 18
+	}
+},
+
+".h5":{
+	font:{
+		fontSize: 14
+	}
+},
+
+".h6":{
+	font:{
+		fontSize: 12
+	}
+},
+
+".normal-text":{
+	font:{
+		fontSize: 14
+	}
+},
+
+".small-text":{
+	font:{
+		fontSize: 10
+	}
+},
+
+".large-text":{
+	font:{
+		fontSize: 18
+	}
 },
 
 /**
@@ -109,8 +225,38 @@
 }
 
 /**
- * 	Misc
+ * 	Borders and Lines
  */
+".border-dark":{
+	border: 6,
+	borderColor:"#666",
+},
+
+".border-dark-thin":{
+	border: 2,
+	borderColor:"#666",
+},
+
+".border-dark-thick":{
+	border: 10,
+	borderColor:"#666",
+},
+
+".border-light":{
+	border: 6,
+	borderColor:"#ececec",
+},
+
+".border-light-thin":{
+	border: 2,
+	borderColor:"#ececec",
+},
+
+".border-light-thick":{
+	border: 10,
+	borderColor:"#ececec",
+},
+
 
 ".black-line":{
 	backgroundColor: "#000",
