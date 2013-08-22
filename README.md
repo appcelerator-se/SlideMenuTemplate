@@ -1,3 +1,5 @@
+[logo]:https://github.com/appcelerator-se/SE-Media/blob/master/appc-logo.png?raw=true
+
 Appcelerator Slide Menu Application Template
 ============================================
 
