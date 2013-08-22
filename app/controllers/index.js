@@ -35,9 +35,9 @@ function showhidemenu(e){
  * @param {Object} e
  */
 
-$.friendsBtn.addEventListener('click', testclick);
-$.messagesBtn.addEventListener('click', testclick);
-$.notificationsBtn.addEventListener('click', testclick);
+$.friendsBtn.icon.addEventListener('click', testclick);
+$.messagesBtn.icon.addEventListener('click', testclick);
+$.notificationsBtn.icon.addEventListener('click', testclick);
 
 function testclick(e){
 	alert(e.source.id + " clicked");
