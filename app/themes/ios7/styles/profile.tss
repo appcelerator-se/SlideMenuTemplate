@@ -1,0 +1,36 @@
+".container": {
+	backgroundGradient:{
+		type: 'linear',
+		startPoint:{x:"100%", y:0},
+		endPoint: {x:0, y:'100%'},
+		colors: [
+			{color:'#9bafc8', offset: 0.0},
+			{color: '#847b7e', offset: 0.3},
+			{color: '#905b63', offset: 1.0}
+		]
+	},,
+},
+
+".redbkg":{
+	backgroundColor: null,
+	opacity: 0.5
+},
+
+".blackbkg":{
+	backgroundColor: '#000'
+},
+
+".profileBtn":{
+	width: 50,
+	height: 45,
+	textAlign: 'center'
+}
+
+"ScrollableView":{
+	height: 200,
+	pagingControlColor: 'transparent'
+}
+
+"Label":{
+	autoLink: Ti.UI.AUTOLINK_ALL 
+}

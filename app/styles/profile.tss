@@ -17,5 +17,10 @@
 }
 
 "ScrollableView":{
-	height: 225
+	height: 210,
+	pagingControlColor: 'transparent'
+}
+
+"Label":{
+	autoLink: Ti.UI.AUTOLINK_ALL 
 }
