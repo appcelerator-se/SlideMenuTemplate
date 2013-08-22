@@ -47,7 +47,8 @@ function addContact(e) {
 };
 
 function shareContact() {
-
+	// TODO code to share contacts via email
+	alert("share contact");
 };
 
 function updateFollowStatus() {
