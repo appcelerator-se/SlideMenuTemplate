@@ -1,7 +1,7 @@
 [logo]:https://github.com/appcelerator-se/SE-Media/blob/master/appc-logo.png?raw=true
 
 ![][logo] Appcelerator Slide Menu Application Template
-          ============================================
+======================================================
 
 ![Screenshot](https://github.com/appcelerator-se/SE-Media/blob/master/Screenshots/SlideMenuTemplate/iOS/iphone-menu-open.png?raw=true)
 
