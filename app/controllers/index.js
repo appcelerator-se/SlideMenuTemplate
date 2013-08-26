@@ -37,8 +37,17 @@ function showhidemenu(e){
 
 $.friendsBtn.icon.addEventListener('click', testclick);
 $.messagesBtn.icon.addEventListener('click', testclick);
-$.notificationsBtn.icon.addEventListener('click', testclick);
+$.notificationsBtn.addEventListener('click', testclick);
 
+$.friendsBtn.icon.addEventListener('touchstart', emphasize);
+$.friendsBtn.icon.addEventListener('touchend', emphasize);
 function testclick(e){
 	alert(e.source.id + " clicked");
 }
+
+function emphasize(e){
+	$.friendsBtn.icon.opacity = ($.friendsBtn.icon.opacity === 1.0) ? 0.5 : 1.0;
+}
+
+
+

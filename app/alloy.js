@@ -104,13 +104,26 @@ Alloy.Globals.App = {
 				/**
 				 * Create a new window to handle the modal dialog
 				 */
-				var modalWin = Ti.UI.createWindow();
+				var modalWin = Ti.UI.createWindow({
+					navBarHidden: true,
+					width: Ti.UI.FILL,
+					height: Ti.UI.FILL
+				});
 				
 				/**
 				 * Create the view controller, and add the primary view to the modal window
 				 */
 				var modalController = Alloy.createController(_controller, _options);
-				modalWin.add(modalWin.getView());
+				modalWin.add(modalController.getView());
+				
+				/**
+				 * Listen for modalController Close Event
+				 */
+				modalController.getView().addEventListener('close', function(e){
+				//	modalWin.remove(modalController.getView());
+				//	modalController = null;
+					modalWin.close();
+				});
 				
 				/**
 				 * Open the window as modal
@@ -155,6 +168,7 @@ Alloy.Globals.App = {
 					duration:100
 				});
 				
+				this.contentView.touchEnabled = this.menuVisible;
 				this.menuVisible = !this.menuVisible
 			}
 		}

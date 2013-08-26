@@ -10,19 +10,19 @@
 			<ScrollableView class="top-buffer" showPagingControl="true">
 				<View class="vgroup size top-buffer">
 					<View class='hgroup redbkg span-width'>
-						<Widget class="icon small-text white left-buffer" src="net.hoyohoyo.iconiclabel"  icon="icon-info-sign" />
+						<Widget class="icon white left-buffer" src="net.hoyohoyo.iconiclabel"  icon="icon-qrcode" />
 						<Label class="h3 white  left-buffer right-buffer">Contact Info</Label>
 					</View>
 					<View class='hgroup size top-buffer left-buffer'>
-						<Widget class=" small-text icon white left-buffer" src="net.hoyohoyo.iconiclabel"  icon="icon-phone" />
+						<Widget class="icon white left-buffer" src="net.hoyohoyo.iconiclabel"  icon="icon-phone" />
 						<Label class="white  left-buffer right-buffer">512-555-1212</Label>
 					</View>
 					<View class='hgroup size top-buffer left-buffer'>
-						<Widget class="icon small-text white left-buffer" src="net.hoyohoyo.iconiclabel"  icon="icon-envelope-alt" />
+						<Widget class="icon white left-buffer" src="net.hoyohoyo.iconiclabel"  icon="icon-envelope-alt" />
 						<Label class="white  left-buffer right-buffer">kelly.smith@appcelerator.com</Label>
 					</View>
 					<View class='hgroup size top-buffer left-buffer'>
-						<Widget class="icon small-text white left-buffer" src="net.hoyohoyo.iconiclabel"  icon="icon-comment" />
+						<Widget class="icon white left-buffer" src="net.hoyohoyo.iconiclabel"  icon="icon-comment" />
 						<Label class="white  left-buffer right-buffer">kelly.smith</Label>
 					</View>
 				</View>
@@ -38,7 +38,13 @@
 						<Widget class="icon white left-buffer" src="net.hoyohoyo.iconiclabel"  icon="icon-map-marker" />
 						<Label class="h3 white left-buffer right-buffer">Location</Label>
 					</View>
-					<View id="mapview" class='buffer' ns="Ti.Map" animate="true" regionFit="true" userLocation="true" mapType="Ti.Map.STANDARD_TYPE" touchEnabled="false">
+					<View  ns="Ti.Map"
+						id="mapview" 
+						class='buffer border-dark-thick'
+						animate="false" 
+						regionFit="true" 
+						userLocation="false" 
+						mapType="Ti.Map.STANDARD_TYPE">
 
 						<!-- Annotations can be added dynamically based on Datasource -->
 						<Annotation id="map"
@@ -48,7 +54,7 @@
 						myid="1"/>
 
 					</View>
-
+						
 				</View>
 			</ScrollableView>
 		</View>

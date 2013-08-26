@@ -9,6 +9,17 @@ $.linkedinBtn.icon.addEventListener('click', updateFollowStatus);
 $.shareContactBtn.icon.addEventListener('click', shareContact);
 $.addContactBtn.icon.addEventListener('click', addContact);
 
+$.mapview.addEventListener('complete', mapAdjustRegion);
+
+function mapAdjustRegion(e){
+	$.mapview.region = {
+		latitude: 30.631256,
+		longitude: -97.675422,
+		latitudeDelta:0.01,
+		longitudeDelta:0.01
+	};
+}
+
 function addContact(e) {
 	Ti.API.info('Saving contact...');
 	var workAddress1 = {

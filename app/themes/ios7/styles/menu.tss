@@ -2,7 +2,7 @@
 	backgroundColor: "transparent",
 	height: Ti.UI.FILL,
 	width: Ti.UI.FILL,
-	layout: 'composite'
+	layout:"composite"
 },
 
 "TableView": {
@@ -10,8 +10,7 @@
 	separatorColor: "transparent",
 	height: 200,
 	width: Ti.UI.FILL,
-	scrollable: false,
-	top:55
+	top: 54
 },
 
 "TableViewRow":{
@@ -38,14 +37,10 @@
 	}
 },
 
-".header-background":{
-	backgroundColor: "#222",
-	opacity: 0.25
-},
-
-".footer-background":{
+".menu-btn-background":{
 	backgroundColor: "#0290ff",
-	opacity: 0.25
+	opacity: 0.25,
+	height: 54
 },
 
 
@@ -70,14 +65,14 @@
 ".footer":{
 	backgroundColor: 'transparent',
 	width: Ti.UI.FILL,
-	height: 54,
+	height: Ti.UI.SIZE,
 	bottom: 0
 }
 
 '.menuIcon':{
 	left: 10,
 	width: 30,
-	height: Ti.UI.SIZE,
+	height: 54,
 	textAlign: 'center',
 	font:{
 		fontFamily: 'FontAwesome', fontSize: 18 

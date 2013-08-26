@@ -1,6 +1,12 @@
 ".container":{
 	layout:'vertical'
 }
+"#menuBar":{
+	backgroundColor: "#f5f6f9",
+	width: Ti.UI.FILL,
+	height: "50dp",
+	layout: "horizontal"
+},
 ".tbButton":{
 	width: "33%",
 	height: "50dp"

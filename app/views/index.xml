@@ -4,7 +4,7 @@
 	This application uses this as the main window of the application, all subsequent screens are loaded
 	as dynamic Ti.UI.Views (excluding the modal function)
 	-->
-	<Window class="container">
+	<Window class="container" onSwipe="showhidemenu">
 		<View>
 			<!-- Hidden Menu -->
 			<View id="menu" onClick="showhidemenu">
@@ -28,12 +28,12 @@
 				gesture to open and close. Additionally, it contains top Action Buttons that could be used to access
 				functional aspects of the application	
 				-->	
-				<View id="navigationBar" onSwipe="showhidemenu">
+				<View id="navigationBar">
 					<View id="menubtn" onClick="showhidemenu">
 						<Widget class='icon white' src="net.hoyohoyo.iconiclabel" icon="icon-reorder" touchEnabled="false"/>
 					</View>
-					<View id="topActions" class="fill"> 
-						<Widget id="friendsBtn" class="topActionButton size left-buffer" src="net.hoyohoyo.iconiclabel" icon="icon-group" />
+					<View id="topActions" class="span-width"> 
+						<Widget id="friendsBtn" class="topActionButton size" src="net.hoyohoyo.iconiclabel" icon="icon-group" />
 						<Widget id="messagesBtn" class="topActionButton size" src="net.hoyohoyo.iconiclabel" icon="icon-comments" />
 						<Widget id="notificationsBtn" class="topActionButton size" src="net.hoyohoyo.iconiclabel" icon="icon-globe" />
 					</View>
