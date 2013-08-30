@@ -43,18 +43,19 @@ function testclick(e){
 	alert(e.source.id + " clicked");
 }
 
-$.friendsBtn.icon.addEventListener('touchstart', emphasize);
-$.friendsBtn.icon.addEventListener('touchend', emphasize);
-
-$.messagesBtn.icon.addEventListener('touchstart', emphasize);
-$.messagesBtn.icon.addEventListener('touchend', emphasize);
-
-$.notificationsBtn.icon.addEventListener('touchstart', emphasize);
-$.notificationsBtn.icon.addEventListener('touchend', emphasize);
-
-function emphasize(e){
-	e.source.opacity = ($.e.source.opacity === 1.0) ? 0.5 : 1.0;
+if(OS_IOS){
+	$.friendsBtn.icon.addEventListener('touchstart', emphasize);
+	$.friendsBtn.icon.addEventListener('touchend', emphasize);
+	
+	$.messagesBtn.icon.addEventListener('touchstart', emphasize);
+	$.messagesBtn.icon.addEventListener('touchend', emphasize);
+	
+	$.notificationsBtn.icon.addEventListener('touchstart', emphasize);
+	$.notificationsBtn.icon.addEventListener('touchend', emphasize);
+	
+	function emphasize(e){
+		e.source.opacity = ($.e.source.opacity === 1.0) ? 0.5 : 1.0;
+	}
 }
-
 
 
