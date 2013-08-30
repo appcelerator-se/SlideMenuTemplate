@@ -4,11 +4,12 @@
 	navBarHidden: true,
 	exitOnClose: true,
 },
-"Label": {
-	width: Ti.UI.SIZE,
-	height: Ti.UI.SIZE,
-	color: "#000"
+
+"#page":{
+	backgroundColor: "#d6d6d6",
+	left: 0,
 },
+
 ".shadow":{
 	right: 0,
 	width: 58,
@@ -23,10 +24,6 @@
 		]
 	}
 },
-"#page":{
-	backgroundColor: "#d6d6d6",
-	left: 0
-},
 
 "#mainWindow":{
 	height: Ti.UI.FILL,	
@@ -36,24 +33,30 @@
 "#menu":{
 	height: Ti.UI.FILL,
 	width: Ti.UI.FILL,
-	backgroundGradient:{
-		type: 'linear',
-		startPoint:{x:0, y:0},
-		endPoint: {x:0, y:'100%'},
-		colors: [
-			{color:'#8ab6e7', offset: 0.0},
-			{color: '#a19483', offset: 1.0}
-		]
-	},
+	backgroundColor: "#2c323f", 
 	left: 0	
 },
 "#navigationBar":{
-	backgroundImage: null,
-	borderColor: '#ae331f',
-	backgroundColor: '#ae331f',
-	border:0,
+	backgroundImage: "/images/iconBarBG.png",
 	width: Ti.UI.FILL,
-	height: "54dp"
+	height: 54,
+	border: 1,
+	borderColor: "maroon"
+},
+
+"#navigationBar[platform=blackberry]":{
+	backgroundImage: "",
+	backgroundColor: '#ae331f',
+	width: Ti.UI.FILL,
+	height: 54,
+	border: 1,
+	borderColor: "maroon"
+},
+
+"#topActions":{
+	width:"150dp",
+	height:"50dp",
+	layout:"horizontal"
 },
 ".topActionButton":{
 	font:{
@@ -62,16 +65,17 @@
 	color: "#68160f",
 	height: 50,
 	width: 50,
-	textAlign:"center",
-	opacity: 0.5
+	textAlign:"center"
 },
-
-"#topActions":{
-	width: 150,
-	height:50,
-	layout:"horizontal"
+"#friendsBtn":{
+	image:"/images/friendsbtn.png" 
 },
-
+"#messagesBtn":{
+	image:"/images/messagesbtn.png" 
+},
+"#notificationsBtn":{
+	image:"/images/notificationsbtn.png" 
+},
 "#menuBar":{
 	backgroundColor: "#f5f6f9",
 	width: Ti.UI.FILL,
@@ -79,8 +83,33 @@
 	layout: "horizontal"
 },
 
+".tbButton":{
+	width: "33%",
+	height: "50dp"
+},
+"#statusBtn":{
+	width: "73dp",
+	height: "19dp",
+	image: "/images/statusbtn.png"
+},
+"#photoBtn":{
+	width: "73dp",
+	height: "19dp",
+	image: "/images/photobtn.png"
+},
+"#checkinBtn":{
+	width: "73dp",
+	height: "19dp",
+	image: "/images/checkinbtn.png"
+},
 "#menubtn":{
 	left: 0,
+	width: 55,
+	height: 54
+},
+"#chatbtn":{
 	width: "55dp",
-	height: "54dp"
+	height: "54dp",
+	right: 0,
+	image:"/chatbtn.png"
 }

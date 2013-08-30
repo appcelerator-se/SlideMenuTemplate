@@ -1,11 +1,6 @@
 var _args = arguments[0] || {};
 
 $.profilePicture.image = _args.image || '/images/profile-pic.jpg';
-
-$.facebookBtn.icon.addEventListener('click', updateFollowStatus);
-$.twitterBtn.icon.addEventListener('click', updateFollowStatus);
-$.linkedinBtn.icon.addEventListener('click', updateFollowStatus);
-
 $.shareContactBtn.icon.addEventListener('click', shareContact);
 $.addContactBtn.icon.addEventListener('click', addContact);
 
@@ -60,9 +55,5 @@ function addContact(e) {
 function shareContact() {
 	// TODO code to share contacts via email
 	alert("share contact");
-};
-
-function updateFollowStatus() {
-	alert('Launch 3rd Party link');
 };
 

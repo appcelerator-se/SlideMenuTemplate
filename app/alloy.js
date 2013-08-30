@@ -9,9 +9,14 @@
 // object. For example:
 //
 // Alloy.Globals.someGlobalFunction = function(){};
+var measurement = require('alloy/measurement');
 
+Alloy.Globals.Grid = require('grid');
 
-
+Ti.API.info("PLATFORM_HEIGHT"+Ti.Platform.displayCaps.platformHeight); 
+Ti.API.info("DENSITY"+Ti.Platform.displayCaps.density);
+Ti.API.info("DPI"+Ti.Platform.displayCaps.dpi);
+Ti.API.info('ROW_HEIGHT '+Alloy.Globals.Grid.rowspan1);
 /* 
  * App Singleton
  * @type {Object}
@@ -66,9 +71,10 @@ Alloy.Globals.App = {
 					/**
 					 * Record the navigation event in Analytics if a currentController exists otherwise create a feature event for the new session
 					 */
+					if(!OS_BLACKBERRY){
 					this.currentController && Ti.Analytics.navEvent( this.currentController.getView().id, _controller) 
 										   || Ti.Analytics.featureEvent("new_session", null);
-					
+					}
 					
 					/**
 					 * If we have a reference to an existing view/controller, lets make sure to remove it
@@ -145,13 +151,14 @@ Alloy.Globals.App = {
 		showhidemenu: function(direction) {
 			
 			Ti.API.info('showhidemenu');
+			var dpi = Ti.Platform.displayCaps.dpi;
 			/**
 			 * Use the actual screen dimensions for the calculations
 			 */
-			if(OS_ANDROID) // ANDROID HACK - Because we are setting the system units to DP we need to divide by 2 on Android
-				this.mainView.width=Ti.Platform.displayCaps.platformWidth/2;
+			if(OS_ANDROID && !this.menuVisible) // ANDROID HACK - Because we are setting the system units to DP we need to divide by 2 on Android
+				this.mainView.width= Ti.Platform.displayCaps.platformWidth / (dpi/160);
 			else
-				this.mainView.width = Ti.Platform.displayCaps.platformWidth
+				this.mainView.width = !this.menuVisible ? Ti.Platform.displayCaps.platformWidth : Ti.UI.FILL;
 			
 			
 			/**
@@ -229,8 +236,9 @@ Alloy.Globals.App = {
 			//Saves the current orientation
 			this.currentOrientation = type;
 			
+			
 			if (this.Navigator.currentController && this.Navigation.currentController.orientationUpdate) {
-            	this.Navigation.currentController.orientationUpdate(type);
+            	this.Navigator.currentController.orientationUpdate(type);
             }
 			
 			Ti.App.fireEvent('updateOrientation', {
@@ -282,3 +290,7 @@ Alloy.Globals.App = {
 		}
 	}
 };
+
+
+
+

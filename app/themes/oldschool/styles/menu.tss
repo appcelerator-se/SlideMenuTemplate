@@ -2,46 +2,60 @@
 	backgroundColor: "transparent",
 	height: Ti.UI.FILL,
 	width: Ti.UI.FILL,
-	layout:'vertical'
+	layout:"vertical",
 },
 
 "TableView": {
 	backgroundColor: "transparent",
-	height: Ti.UI.FILL,
+	height: Alloy.Globals.Grid.rowspan8,
 	width: Ti.UI.FILL,
-	separatorColor: "#242a37"
+	separatorColor: "#242a37",
+	top: 0
 },
 
 "TableViewRow":{
 	backgroundColor: 'transparent',
-	height: 45,
+	height: Alloy.Globals.Grid.rowspan1,
 	width: Ti.UI.FILL,
 },
 
 "Label":{
 	font:{
+		fontWeight: "normal",
 		fontFamily: "Helvetica Neue",
-		fontSize: 24
+		fontSize: 18
 	},
 	color: "#fff",
 	left: 50
 },
 
+"#btnProfile":{
+	top:0
+},
+
 ".profile":{
 	font:{
-		fontSize: 28 
+		fontSize: 20 
 	}
+},
+
+".footer":{
+	backgroundColor: 'transparent',
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	bottom: 0
+},
+
+".menu-btn-background":{
+	backgroundColor: "#000",
+	opacity: 0.50,
+	height: Alloy.Globals.Grid.rowspan1,
+	width: Ti.UI.FILL
 },
 
 ".headerBackground":{
 	backgroundColor: "#222",
 	opacity: 0.25
-},
-
-".menuHeader":{
-	backgroundColor: 'transparent',
-	width: Ti.UI.FILL,
-	height: 54
 },
 
 '.menuHeaderIcon':{
@@ -50,7 +64,7 @@
 	height: Ti.UI.SIZE,
 	textAlign: 'center',
 	font:{
-		fontFamily: 'FontAwesome', fontSize: 28
+		fontFamily: 'FontAwesome', fontSize: 20 
 	},
 	color: "#fff"
 },
@@ -61,8 +75,9 @@
 	height: Ti.UI.SIZE,
 	textAlign: 'center',
 	font:{
-		fontFamily: 'FontAwesome', fontSize: 24
+		fontFamily: 'FontAwesome', fontSize: 18 
 	},
+	color: "#7d8493",
 	color: "#fff"
 },
 

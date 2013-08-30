@@ -1,4 +1,15 @@
 <Alloy>
-	<View class="container">
+	<View class="fill container vgroup">
+		<View id="settingsBtn" class="span-width" onClick="closeWin">
+			<View class="menu-btn-background" touchEnabled="false"/>
+			<Widget class="size menuHeaderIcon" src="net.hoyohoyo.iconiclabel" icon="icon-cog" touchEnabled="false"/>
+			<Label class="size white profile" touchEnabled="false">Settings</Label>
+		</View>
+		<TableView >
+			<TableViewRow>
+				<Label class="left-buffer h4">Notifications</Label>
+				<Switch id="notificationSwitch" class="right-buffer" value="true"/>
+			</TableViewRow>
+		</TableView>
 	</View>
 </Alloy>

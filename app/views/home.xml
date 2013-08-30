@@ -1,5 +1,5 @@
 <Alloy>
 	<View class="container">
-		<WebView url="http://www.appcelerator.com" />
+		<WebView url="http://www2.appcelerator.com" />
 	</View>
 </Alloy>

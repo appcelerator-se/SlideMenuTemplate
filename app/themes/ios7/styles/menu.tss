@@ -2,21 +2,21 @@
 	backgroundColor: "transparent",
 	height: Ti.UI.FILL,
 	width: Ti.UI.FILL,
-	layout:"composite"
+	layout:"vertical"
 },
 
 "TableView": {
 	backgroundColor: "transparent",
 	separatorColor: "transparent",
-	height: 200,
+	height: Alloy.Globals.Grid.rowspan8,
 	width: Ti.UI.FILL,
-	top: 54
+	top: 0
 },
 
 "TableViewRow":{
 	backgroundColor: 'transparent',
 	selectedBackgroundColor:'#222', //<-- want to use alpha so th
-	height: 45,
+	height: Alloy.Globals.Grid.rowspan1,
 	width: Ti.UI.FILL,
 },
 
@@ -26,7 +26,6 @@
 		fontFamily: "Helvetica Neue",
 		fontSize: 18
 	},
-	//color: "#7d8493" <-- Old School iOS
 	color: "#fff",
 	left: 50
 },
@@ -40,15 +39,7 @@
 ".menu-btn-background":{
 	backgroundColor: "#0290ff",
 	opacity: 0.25,
-	height: 54
-},
-
-
-".menuHeader":{
-	backgroundColor: 'transparent',
-	width: Ti.UI.FILL,
-	height: 54,
-	top: 0
+	height: Alloy.Globals.Grid.rowspan1
 },
 
 '.menuHeaderIcon':{

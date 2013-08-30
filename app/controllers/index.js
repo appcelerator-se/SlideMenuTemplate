@@ -37,16 +37,23 @@ function showhidemenu(e){
 
 $.friendsBtn.icon.addEventListener('click', testclick);
 $.messagesBtn.icon.addEventListener('click', testclick);
-$.notificationsBtn.addEventListener('click', testclick);
+$.notificationsBtn.icon.addEventListener('click', testclick);
 
-$.friendsBtn.icon.addEventListener('touchstart', emphasize);
-$.friendsBtn.icon.addEventListener('touchend', emphasize);
 function testclick(e){
 	alert(e.source.id + " clicked");
 }
 
+$.friendsBtn.icon.addEventListener('touchstart', emphasize);
+$.friendsBtn.icon.addEventListener('touchend', emphasize);
+
+$.messagesBtn.icon.addEventListener('touchstart', emphasize);
+$.messagesBtn.icon.addEventListener('touchend', emphasize);
+
+$.notificationsBtn.icon.addEventListener('touchstart', emphasize);
+$.notificationsBtn.icon.addEventListener('touchend', emphasize);
+
 function emphasize(e){
-	$.friendsBtn.icon.opacity = ($.friendsBtn.icon.opacity === 1.0) ? 0.5 : 1.0;
+	e.source.opacity = ($.e.source.opacity === 1.0) ? 0.5 : 1.0;
 }
 
 

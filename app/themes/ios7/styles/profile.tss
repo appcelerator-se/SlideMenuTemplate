@@ -27,7 +27,7 @@
 }
 
 "ScrollableView":{
-	height: 200,
+	height: Alloy.Globals.Grid.rowspan4,
 	pagingControlColor: 'transparent'
 }
 

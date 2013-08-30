@@ -6,7 +6,7 @@
  */
 
 'Label[platform=android]': {
-    color: '#000' // all platforms except Android default to black 
+   color: '#000' // all platforms except Android default to black 
 },
 
 'Window': {
@@ -79,6 +79,80 @@
 	width: Ti.UI.SIZE
 },
 
+/**
+ * 	Grid Based Layout System
+ *  requires grid.js to be included at the beginning of the
+ *  alloy.js file of your Appcelerator Titanium Application
+ * 
+ *  grid.js can be located here: 
+ *  https://github.com/grantges/Alloy-Bootstrap
+ * 
+ */
+".rowspan1":{
+	height: Alloy.Globals.Grid.rowspan1
+},
+".rowspan2":{
+	height: Alloy.Globals.Grid.rowspan2
+},
+".rowspan3":{
+	height: Alloy.Globals.Grid.rowspan3
+},
+".rowspan4":{
+	height: Alloy.Globals.Grid.rowspan4
+},
+".rowspan5":{
+	height: Alloy.Globals.Grid.rowspan5
+},
+".rowspan6":{
+	height: Alloy.Globals.Grid.rowspan6
+},
+".rowspan7":{
+	height: Alloy.Globals.Grid.rowspan7
+},
+".rowspan8":{
+	height: Alloy.Globals.Grid.rowspan8
+},
+".rowspan9":{
+	height: Alloy.Globals.Grid.rowspan9
+},
+".rowspan10":{
+	height: Alloy.Globals.Grid.rowspan10
+},
+".colspan1":{
+	width: Alloy.Globals.Grid.colspan1
+},
+".colspan2":{
+	width: Alloy.Globals.Grid.colspan2
+},
+".colspan3":{
+	width: Alloy.Globals.Grid.colspan3
+},
+".colspan4":{
+	width: Alloy.Globals.Grid.colspan4
+},
+".colspan5":{
+	width: Alloy.Globals.Grid.colspan5
+},
+".colspan6":{
+	width: Alloy.Globals.Grid.colspan6
+},
+".colspan7":{
+	width: Alloy.Globals.Grid.colspan7
+},
+".colspan8":{
+	width: Alloy.Globals.Grid.colspan8
+},
+".colspan9":{
+	width: Alloy.Globals.Grid.colspan9
+},
+".colspan10":{
+	width: Alloy.Globals.Grid.colspan10
+},
+
+/**
+ * 	END GRID SYSTEM
+ */
+
 ".size":{
 	height: Ti.UI.SIZE,
 	width: Ti.UI.SIZE
@@ -137,9 +211,21 @@
 	}
 },
 
+".h1[platform=blackberry]":{
+	font:{
+		fontSize: 30
+	}
+},
+
 ".h2":{
 	font:{
 		fontSize: 30
+	}
+},
+
+".h2[platform=blackberry]":{
+	font:{
+		fontSize: 24
 	}
 },
 
@@ -149,9 +235,21 @@
 	}
 },
 
+".h3[platform=blackberry]":{
+	font:{
+		fontSize: 18
+	}
+},
+
 ".h4":{
 	font:{
 		fontSize: 18
+	}
+},
+
+".h4[platform=blackberry]":{
+	font:{
+		fontSize: 14
 	}
 },
 
@@ -161,12 +259,23 @@
 	}
 },
 
+".h5[platform=blackberry]":{
+	font:{
+		fontSize: 12
+	}
+},
+
 ".h6":{
 	font:{
 		fontSize: 12
 	}
 },
 
+".h6[platform=blackberry]":{
+	font:{
+		fontSize: 10
+	}
+},
 ".normal-text":{
 	font:{
 		fontSize: 14
