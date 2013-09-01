@@ -55,7 +55,8 @@
 	color: "#68160f",
 	height: 50,
 	width: 50,
-	textAlign:"center"
+	textAlign:"center",
+	opacity: 0.5
 },
 "#friendsBtn":{
 	image:"/images/friendsbtn.png" 

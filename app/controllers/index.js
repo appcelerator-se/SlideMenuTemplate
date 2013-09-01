@@ -14,7 +14,7 @@ App.Navigator.init({
 /*
  * Set WindowSize based on screen size (see function below)
  */
-updateWindowSize()
+updateWindowSize();
 
 
 /**
@@ -64,14 +64,20 @@ function emphasize(e){
 
 
 /*
- * Set Width of Main Window and the Main Page Area to the system width (px here forces system over DP )
+ * Set Width of Main Window and child views to the system width
  */
 function updateWindowSize(){
-	//alert('updateWindowSize');
-	var dpi = Ti.Platform.displayCaps.dpi;
-	$.index.width = Ti.Platform.displayCaps.platformWidth +'px';
-	$.page.width = Ti.Platform.displayCaps.platformWidth +'px';
-	$.mainWindow.width = Ti.Platform.displayCaps.platformWidth +'px';
+	var width;
+	
+	if(OS_ANDROID){
+		var dpi = Ti.Platform.displayCaps.dpi;
+		width = Ti.Platform.displayCaps.platformWidth +'px'; // <-- forcing system width over dp for Android
+	}
+	else {
+		width = Ti.Platform.displayCaps.platformWidth;
+	}
+
+	$.index.width = $.page.width = $.mainWindow.width = width;
 }
 
 Ti.Gesture.addEventListener('orientationchange', updateWindowSize);

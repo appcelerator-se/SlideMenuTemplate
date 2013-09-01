@@ -39,10 +39,7 @@
 	}
 },
 
-".footer":{
-	backgroundColor: 'transparent',
-	width: Ti.UI.FILL,
-	height: Ti.UI.SIZE,
+"#settingsBtn":{
 	bottom: 0
 },
 

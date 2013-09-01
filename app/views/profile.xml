@@ -48,7 +48,7 @@
 						userLocation="false" 
 						mapType="Ti.Map.STANDARD_TYPE">
 
-						<!-- Annotations can be added dynamically based on Datasource -->
+						<!-- Annotations can be added dynamically based on Datasource --> 
 						<Annotation id="map"
 						latitude="30.631256" longitude="-97.675422"
 						title="Home Office" subtitle="Georgetown, TX"
@@ -56,7 +56,6 @@
 						myid="1"/>
 
 					</View>
-						
 				</View>
 			</ScrollableView>
 			<View class="buffer vgroup" formFactor="tablet">
@@ -100,14 +99,14 @@
 						userLocation="false" 
 						mapType="Ti.Map.STANDARD_TYPE"> 
 
-						<!-- Annotations can be added dynamically based on Datasource -->
+						<!-- Annotations can be added dynamically based on Datasource --> 
 						<Annotation id="map"
 						latitude="30.631256" longitude="-97.675422"
 						title="Home Office" subtitle="Georgetown, TX"
 						pincolor="Titanium.Map.ANNOTATION_RED" 
 						myid="1"/>
 
-					</View>	
+					</View>
 				</View>
 			</View>
 		</View>
