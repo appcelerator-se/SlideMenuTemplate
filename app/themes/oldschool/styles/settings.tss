@@ -1,3 +1,28 @@
-".container": {
-	backgroundColor: "white"
+".container":{
+	backgroundColor: 'white',
+	width: Ti.UI.FILL
+}
+
+"TableViewRow":{
+	height: 54
+}
+
+"Label[platform=android]":{
+	color:'#000'
+}
+
+'.menuHeaderIcon':{
+	left: 10,
+	width: 30,
+	height: Ti.UI.SIZE,
+	textAlign: 'center',
+	font:{
+		fontFamily: 'FontAwesome', fontSize: 20 
+	},
+	color: "#fff"
+}
+
+".menu-btn-background":{
+	backgroundColor: "#000",
+	height: 54
 }

@@ -11,6 +11,11 @@ App.Navigator.init({
 	startPage: 'home'	// <- The page you want to start your application
 });
 
+/*
+ * Set WindowSize based on screen size (see function below)
+ */
+updateWindowSize()
+
 
 /**
  * Open the main application Window
@@ -43,23 +48,32 @@ function testclick(e){
 	alert(e.source.id + " clicked");
 }
 
-if(OS_IOS){
-	$.friendsBtn.icon.addEventListener('touchstart', emphasize);
-	$.friendsBtn.icon.addEventListener('touchend', emphasize);
-	
-	$.messagesBtn.icon.addEventListener('touchstart', emphasize);
-	$.messagesBtn.icon.addEventListener('touchend', emphasize);
-	
-	$.notificationsBtn.icon.addEventListener('touchstart', emphasize);
-	$.notificationsBtn.icon.addEventListener('touchend', emphasize);
-	
-	function emphasize(e){
-		e.source.opacity = ($.e.source.opacity === 1.0) ? 0.5 : 1.0;
-	}
+
+$.friendsBtn.icon.addEventListener('touchstart', emphasize);
+$.friendsBtn.icon.addEventListener('touchend', emphasize);
+
+$.messagesBtn.icon.addEventListener('touchstart', emphasize);
+$.messagesBtn.icon.addEventListener('touchend', emphasize);
+
+$.notificationsBtn.icon.addEventListener('touchstart', emphasize);
+$.notificationsBtn.icon.addEventListener('touchend', emphasize);
+
+function emphasize(e){
+	e.source.opacity = (e.source.opacity === 1.0) ? 0.5 : 1.0;
 }
 
-Ti.Gesture.addEventListener('orientationchange', function(e){
-	$.index.width = Ti.UI.FILL;
-});
+
+/*
+ * Set Width of Main Window and the Main Page Area to the system width (px here forces system over DP )
+ */
+function updateWindowSize(){
+	//alert('updateWindowSize');
+	var dpi = Ti.Platform.displayCaps.dpi;
+	$.index.width = Ti.Platform.displayCaps.platformWidth +'px';
+	$.page.width = Ti.Platform.displayCaps.platformWidth +'px';
+	$.mainWindow.width = Ti.Platform.displayCaps.platformWidth +'px';
+}
+
+Ti.Gesture.addEventListener('orientationchange', updateWindowSize);
 
 

@@ -7,22 +7,22 @@
 		</View>
 		<TableView id="tableView">
 			<TableViewSection headerView="menuSectionHeader">
-				<TableViewRow class="size" className="menuRow" page="home">
+				<TableViewRow className="menuRow" page="home">
 					<Widget class="menuIcon" src="net.hoyohoyo.iconiclabel" icon="icon-home"/>
 					<Label class="size" >Home</Label>
 					<View class="white-line transparent" />
 				</TableViewRow>
-				<TableViewRow class="size" className="menuRow" page="briefcase">
+				<TableViewRow className="menuRow" page="briefcase">
 					<Widget class="menuIcon" src="net.hoyohoyo.iconiclabel" icon="icon-briefcase"/>
 					<Label class="size" >Briefcase</Label>
 					<View class="white-line transparent" />
 				</TableViewRow>
-				<TableViewRow class="size" className="menuRow" page="locations">
+				<TableViewRow className="menuRow" page="locations">
 					<Widget class="menuIcon" src="net.hoyohoyo.iconiclabel" icon="icon-map-marker" />
 					<Label class="size" >Locations</Label>
 					<View class="white-line transparent" />
 				</TableViewRow>
-				<TableViewRow class="size" className="menuRow" page="photos">
+				<TableViewRow className="menuRow" page="photos">
 					<Widget class="menuIcon" src="net.hoyohoyo.iconiclabel" icon="icon-picture" />
 					<Label class="size" >Photos</Label>
 					<View class="white-line transparent" />

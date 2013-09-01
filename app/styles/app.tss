@@ -14,7 +14,9 @@
 },
 
 'Window[platform=android]': {
-    modal: false // make android windows all heavyweight
+    modal: false, // make android windows all heavyweight
+    navBarHidden: true,
+    fullscreen: true,
 },
 
 'TextField': {

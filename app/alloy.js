@@ -144,16 +144,7 @@ Alloy.Globals.App = {
 		showhidemenu: function(direction) {
 			
 			Ti.API.info('showhidemenu');
-			var dpi = Ti.Platform.displayCaps.dpi;
-			/**
-			 * Use the actual screen dimensions for the calculations
-			 */
-			if(OS_ANDROID && !this.menuVisible) // ANDROID HACK - Because we are setting the system units to DP we need to divide by 2 on Android
-				this.mainView.width= Ti.Platform.displayCaps.platformWidth / (dpi/160);
-			else
-				this.mainView.width = Ti.Platform.displayCaps.platformWidth;
-			
-			
+						
 			/**
 			 * Animate the mainView x pixels based on the App Settings (see above) if it currently isn't open, if its open move it back to the left
 			 */

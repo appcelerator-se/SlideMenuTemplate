@@ -16,7 +16,7 @@
 "TableViewRow":{
 	backgroundColor: 'transparent',
 	selectedBackgroundColor:'#222', //<-- want to use alpha so th
-	height: "80%",
+	height: 45,
 	width: Ti.UI.FILL,
 },
 
