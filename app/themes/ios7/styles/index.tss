@@ -53,7 +53,7 @@
 	backgroundColor: '#ae331f',
 	border:0,
 	width: Ti.UI.FILL,
-	height: Alloy.Globals.Grid.rowspan1
+	height: 54
 },
 ".topActionButton":{
 	font:{

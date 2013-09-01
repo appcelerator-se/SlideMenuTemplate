@@ -26,8 +26,18 @@
 	textAlign: 'center'
 }
 
-"ScrollableView":{
-	height: Alloy.Globals.Grid.rowspan4,
+"#profilePicture[formFactor=handheld]":{
+	height: 125,
+	width: 125
+}
+
+"#profilePicture[formFactor=tablet]":{
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE
+}
+
+"ScrollableView[formFactor=handheld]":{
+	height: "45%",
 	pagingControlColor: 'transparent'
 }
 

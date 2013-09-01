@@ -7,7 +7,7 @@
 
 "TableView": {
 	backgroundColor: "transparent",
-	height: Alloy.Globals.Grid.rowspan8,
+	height: "80%",
 	width: Ti.UI.FILL,
 	separatorColor: "#242a37",
 	top: 0
@@ -15,7 +15,7 @@
 
 "TableViewRow":{
 	backgroundColor: 'transparent',
-	height: Alloy.Globals.Grid.rowspan1,
+	height: 45,
 	width: Ti.UI.FILL,
 },
 
@@ -46,10 +46,14 @@
 	bottom: 0
 },
 
+".menu-btn":{
+	height: 54
+},
+
 ".menu-btn-background":{
 	backgroundColor: "#000",
 	opacity: 0.50,
-	height: Alloy.Globals.Grid.rowspan1,
+	height: Ti.UI.FILL,
 	width: Ti.UI.FILL
 },
 

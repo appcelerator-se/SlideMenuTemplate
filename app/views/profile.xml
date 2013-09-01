@@ -1,13 +1,13 @@
 <Alloy>
 	<View class="container fill">
 		<View class="vgroup rowspan8">
-			<ImageView id="profilePicture" class="rowspan2" touchEnabled="false"/>
+			<ImageView id="profilePicture" class="top-buffer" touchEnabled="false"/>
 			<View class="vgroup size rowspan2">
 				<Label id="name" class='h3 white top-buffer' touchEnabled="false">Kelly Smith</Label>
 				<Label id="job" class='h5 white' touchEnabled="false">Account Rep</Label>
 				<Label id="company" class='h5 white' touchEnabled="false">Appcelerator, Inc</Label>
 			</View>
-			<ScrollableView class="top-buffer rowspan4" showPagingControl="true" platform="android,ios">
+			<ScrollableView class="top-buffer" showPagingControl="true" formFactor="handheld" pagingControlHeight="20">
 				<View class="vgroup size top-buffer">
 					<View class='hgroup redbkg span-width'>
 						<Widget class="icon white left-buffer" src="net.hoyohoyo.iconiclabel"  icon="icon-qrcode" />
@@ -31,7 +31,9 @@
 						<Widget class="icon white left-buffer" src="net.hoyohoyo.iconiclabel"  icon="icon-info-sign" />
 						<Label class="h3 white  left-buffer right-buffer">About</Label>
 					</View>
-					<Label id="profileBio" class="normal-text white left-buffer right-buffer top-buffer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Label>
+					<ScrollView class="size">
+						<Label id="profileBio" class="normal-text white left-buffer right-buffer top-buffer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Label>
+					</ScrollView>
 				</View>
 				<View class="vgroup size top-buffer">
 					<View class='hgroup redbkg span-width'>
@@ -57,6 +59,57 @@
 						
 				</View>
 			</ScrollableView>
+			<View class="buffer vgroup" formFactor="tablet">
+				<View class="hgroup size">
+					<View class="vgroup size top-buffer">
+						<View class='hgroup redbkg size'>
+							<Widget class="icon white left-buffer" src="net.hoyohoyo.iconiclabel"  icon="icon-qrcode" />
+							<Label class="h3 white  left-buffer right-buffer">Contact Info</Label>
+						</View>
+						<View class='hgroup size top-buffer left-buffer'>
+							<Widget class="icon white left-buffer" src="net.hoyohoyo.iconiclabel"  icon="icon-phone" />
+							<Label class="white  left-buffer right-buffer">512-555-1212</Label>
+						</View>
+						<View class='hgroup size top-buffer left-buffer'>
+							<Widget class="icon white left-buffer" src="net.hoyohoyo.iconiclabel"  icon="icon-envelope-alt" />
+							<Label class="white  left-buffer right-buffer">kelly.smith@appcelerator.com</Label>
+						</View>
+						<View class='hgroup size top-buffer left-buffer'>
+							<Widget class="icon white left-buffer" src="net.hoyohoyo.iconiclabel"  icon="icon-comment" />
+							<Label class="white  left-buffer right-buffer">kelly.smith</Label>
+						</View>
+					</View>
+					<View class="vgroup size top-buffer" >
+						<View class='hgroup redbkg size right-buffer'>
+							<Widget class="icon white left-buffer" src="net.hoyohoyo.iconiclabel"  icon="icon-info-sign" />
+							<Label class="h3 white  left-buffer right-buffer">About</Label>
+						</View>
+						<Label id="profileBio" class="normal-text white left-buffer right-buffer top-buffer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Label>
+					</View>
+				</View>
+				<View class="vgroup size top-buffer bottonm-buffer">
+					<View class='hgroup redbkg span-width'>
+						<Widget class="icon white left-buffer" src="net.hoyohoyo.iconiclabel"  icon="icon-map-marker" />
+						<Label class="h3 white left-buffer right-buffer">Location</Label>
+					</View>
+					<View  ns="Ti.Map"
+						id="mapview" 
+						class='buffer border-dark-thick'
+						animate="false" 
+						regionFit="true" 
+						userLocation="false" 
+						mapType="Ti.Map.STANDARD_TYPE"> 
+
+						<!-- Annotations can be added dynamically based on Datasource -->
+						<Annotation id="map"
+						latitude="30.631256" longitude="-97.675422"
+						title="Home Office" subtitle="Georgetown, TX"
+						pincolor="Titanium.Map.ANNOTATION_RED" 
+						myid="1"/>
+
+					</View>	
+				</View>
+			</View>
 		</View>
 		<View class="vgroup size right top">
 			<Widget id="addContactBtn" class="icon white profileBtn" src="net.hoyohoyo.iconiclabel"  icon="icon-plus" />

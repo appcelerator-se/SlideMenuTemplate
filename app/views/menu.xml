@@ -1,6 +1,6 @@
 <Alloy>
 	<View class="container">
-		<View id="btnProfile" class="span-width top" page="profile">
+		<View id="btnProfile" class="span-width top menu-btn" page="profile">
 			<View class="menu-btn-background" touchEnabled="false" />
 			<Widget class="size menuHeaderIcon" src="net.hoyohoyo.iconiclabel" icon="icon-user" touchEnabled="false" />
 			<Label class="size white profile" touchEnabled="false">My Profile</Label>
@@ -29,7 +29,7 @@
 				</TableViewRow>
 			<TableViewSection>
 		</TableView>
-		<View id="settingsBtn" class="span-width" page="settings">
+		<View id="settingsBtn" class="span-width menu-btn" page="settings">
 			<View id="footerBkg" class="menu-btn-background" touchEnabled="false"/>
 			<Widget class="size menuHeaderIcon" src="net.hoyohoyo.iconiclabel" icon="icon-cog" touchEnabled="false"/>
 			<Label class="size white profile" touchEnabled="false">Settings</Label>

@@ -2,7 +2,7 @@
 	backgroundColor: "transparent",
 	height: Ti.UI.FILL,
 	width: Ti.UI.FILL,
-	layout:"vertical",
+	layout:"composite",
 },
 
 "TableView": {
@@ -10,7 +10,7 @@
 	height: "80%",
 	width: Ti.UI.FILL,
 	separatorColor: "#242a37",
-	top: 0
+	top: 54
 },
 
 "TableViewRow":{
@@ -46,10 +46,14 @@
 	bottom: 0
 },
 
+".menu-btn":{
+	height: "10%"	
+}
+
 ".menu-btn-background":{
 	backgroundColor: "#000",
 	opacity: 0.50,
-	height: "10%",
+	height: Ti.UI.FILL,
 	width: Ti.UI.FILL
 },
 

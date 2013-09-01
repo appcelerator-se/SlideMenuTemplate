@@ -2,21 +2,21 @@
 	backgroundColor: "transparent",
 	height: Ti.UI.FILL,
 	width: Ti.UI.FILL,
-	layout:"vertical"
+	layout:"composite"
 },
 
 "TableView": {
 	backgroundColor: "transparent",
 	separatorColor: "transparent",
-	height: Alloy.Globals.Grid.rowspan8,
+	height: Ti.UI.SIZE,
 	width: Ti.UI.FILL,
-	top: 0
+	top: 54
 },
 
 "TableViewRow":{
 	backgroundColor: 'transparent',
 	selectedBackgroundColor:'#222', //<-- want to use alpha so th
-	height: Alloy.Globals.Grid.rowspan1,
+	height: "80%",
 	width: Ti.UI.FILL,
 },
 
@@ -30,16 +30,24 @@
 	left: 50
 },
 
+"#settingsBtn":{
+	bottom:0
+},
+
 ".profile":{
 	font:{
 		fontSize: 20 
 	}
 },
 
+".menu-btn":{
+	height: 50	
+}
+
 ".menu-btn-background":{
 	backgroundColor: "#0290ff",
 	opacity: 0.25,
-	height: Alloy.Globals.Grid.rowspan1
+	height: Ti.UI.FILL
 },
 
 '.menuHeaderIcon':{
@@ -75,3 +83,4 @@
 ".white-line":{
 	bottom: 0
 }
+
