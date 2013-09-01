@@ -10,13 +10,6 @@
 //
 // Alloy.Globals.someGlobalFunction = function(){};
 var measurement = require('alloy/measurement');
-
-Alloy.Globals.Grid = require('grid');
-
-Ti.API.info("PLATFORM_HEIGHT"+Ti.Platform.displayCaps.platformHeight); 
-Ti.API.info("DENSITY"+Ti.Platform.displayCaps.density);
-Ti.API.info("DPI"+Ti.Platform.displayCaps.dpi);
-Ti.API.info('ROW_HEIGHT '+Alloy.Globals.Grid.rowspan1);
 /* 
  * App Singleton
  * @type {Object}
@@ -158,7 +151,7 @@ Alloy.Globals.App = {
 			if(OS_ANDROID && !this.menuVisible) // ANDROID HACK - Because we are setting the system units to DP we need to divide by 2 on Android
 				this.mainView.width= Ti.Platform.displayCaps.platformWidth / (dpi/160);
 			else
-				this.mainView.width = !this.menuVisible ? Ti.Platform.displayCaps.platformWidth : Ti.UI.FILL;
+				this.mainView.width = Ti.Platform.displayCaps.platformWidth;
 			
 			
 			/**
@@ -237,7 +230,7 @@ Alloy.Globals.App = {
 			this.currentOrientation = type;
 			
 			
-			if (this.Navigator.currentController && this.Navigation.currentController.orientationUpdate) {
+			if (this.Navigator.currentController && this.Navigator.currentController.orientationUpdate) {
             	this.Navigator.currentController.orientationUpdate(type);
             }
 			

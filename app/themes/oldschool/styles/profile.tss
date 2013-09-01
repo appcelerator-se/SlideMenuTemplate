@@ -11,13 +11,27 @@
 },
 
 ".profileBtn":{
-	width: "33%",
+	width: 50,
 	height: 45,
 	textAlign: 'center'
 }
 
-"ScrollableView":{
-	height: 210,
+"#profilePicture[formFactor=handheld]":{
+	height: 125,
+	width: 125
+}
+
+"#profilePicture[formFactor=tablet]":{
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE
+}
+
+"#about":{
+	width: "50%"
+}
+
+"ScrollableView[formFactor=handheld]":{
+	height: "45%",
 	pagingControlColor: 'transparent'
 }
 

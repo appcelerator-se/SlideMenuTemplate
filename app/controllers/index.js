@@ -58,4 +58,8 @@ if(OS_IOS){
 	}
 }
 
+Ti.Gesture.addEventListener('orientationchange', function(e){
+	$.index.width = Ti.UI.FILL;
+});
+
 

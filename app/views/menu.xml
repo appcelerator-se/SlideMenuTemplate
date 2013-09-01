@@ -7,24 +7,24 @@
 		</View>
 		<TableView id="tableView">
 			<TableViewSection headerView="menuSectionHeader">
-				<TableViewRow className="menuRow" page="home">
+				<TableViewRow class="size" className="menuRow" page="home">
 					<Widget class="menuIcon" src="net.hoyohoyo.iconiclabel" icon="icon-home"/>
-					<Label>Home</Label>
+					<Label class="size" >Home</Label>
 					<View class="white-line transparent" />
 				</TableViewRow>
-				<TableViewRow className="menuRow" page="briefcase">
+				<TableViewRow class="size" className="menuRow" page="briefcase">
 					<Widget class="menuIcon" src="net.hoyohoyo.iconiclabel" icon="icon-briefcase"/>
-					<Label>Briefcase</Label>
+					<Label class="size" >Briefcase</Label>
 					<View class="white-line transparent" />
 				</TableViewRow>
-				<TableViewRow className="menuRow" page="locations">
+				<TableViewRow class="size" className="menuRow" page="locations">
 					<Widget class="menuIcon" src="net.hoyohoyo.iconiclabel" icon="icon-map-marker" />
-					<Label>Locations</Label>
+					<Label class="size" >Locations</Label>
 					<View class="white-line transparent" />
 				</TableViewRow>
-				<TableViewRow className="menuRow" page="photos">
+				<TableViewRow class="size" className="menuRow" page="photos">
 					<Widget class="menuIcon" src="net.hoyohoyo.iconiclabel" icon="icon-picture" />
-					<Label>Photos</Label>
+					<Label class="size" >Photos</Label>
 					<View class="white-line transparent" />
 				</TableViewRow>
 			<TableViewSection>

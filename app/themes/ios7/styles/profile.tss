@@ -36,6 +36,10 @@
 	width: Ti.UI.SIZE
 }
 
+"#about":{
+	width: "50%"
+}
+
 "ScrollableView[formFactor=handheld]":{
 	height: "45%",
 	pagingControlColor: 'transparent'
