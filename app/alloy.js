@@ -105,6 +105,8 @@ Alloy.Globals.App = {
 				 */
 				var modalWin = Ti.UI.createWindow({
 					navBarHidden: true,
+					fullscreen: true,
+					modal: true,
 					width: Ti.UI.FILL,
 					height: Ti.UI.FILL
 				});
@@ -127,7 +129,7 @@ Alloy.Globals.App = {
 				/**
 				 * Open the window as modal
 				 */
-				modalWin.open({modal: true});
+				modalWin.open();
 				
 			}
 			else {

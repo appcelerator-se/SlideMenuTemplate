@@ -3,6 +3,7 @@
 	orientationModes: [Ti.UI.PORTRAIT,Ti.UI.LANDSCAPE_LEFT,Ti.UI.LANDSCAPE_RIGHT,Ti.UI.UPSIDE_PORTRAIT],
 	navBarHidden: true,
 	exitOnClose: true,
+	statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT
 },
 "Label": {
 	width: Ti.UI.SIZE,
@@ -56,6 +57,7 @@
 	height: 54
 },
 ".topActionButton":{
+	top: 10,
 	font:{
 		fontFamily: 'FontAwesome', fontSize: 24 
 	},
@@ -80,6 +82,7 @@
 },
 
 "#menubtn":{
+	top: 10,
 	left: 0,
 	width: "55dp",
 	height: "54dp"

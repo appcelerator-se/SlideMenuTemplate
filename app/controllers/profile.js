@@ -4,7 +4,10 @@ $.profilePicture.image = _args.image || '/images/profile-pic.jpg';
 $.shareContactBtn.icon.addEventListener('click', shareContact);
 $.addContactBtn.icon.addEventListener('click', addContact);
 
-$.mapview.addEventListener('complete', mapAdjustRegion);
+if(OS_IOS){
+	$.mapview.addEventListener('complete', mapAdjustRegion);
+}
+
 
 function mapAdjustRegion(e){
 	$.mapview.region = {

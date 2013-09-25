@@ -35,13 +35,14 @@
 },
 
 ".profile":{
+	top:20,
 	font:{
 		fontSize: 20 
 	}
 },
 
 ".menu-btn":{
-	height: 50	
+	height: 54	
 }
 
 ".menu-btn-background":{
@@ -51,6 +52,7 @@
 },
 
 '.menuHeaderIcon':{
+	top: 20,
 	left: 10,
 	width: 30,
 	height: Ti.UI.SIZE,

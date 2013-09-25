@@ -9,6 +9,9 @@
     "os:android": {
     	"theme":"oldschool"
     },
+    "os:blackberry":{
+    	"theme":"default"
+    },
     "dependencies": {
         "net.hoyohoyo.iconiclabel": "1.3"
     }
