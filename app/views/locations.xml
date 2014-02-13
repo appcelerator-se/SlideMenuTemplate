@@ -2,5 +2,6 @@
 	<View>
 		<View ns="Ti.Map" id="mapview" />
 		<TextField id="addressField" onReturn="onReturn" />
+		<Widget class="icon" src="net.hoyohoyo.iconiclabel" icon="icon-search" onClick="onReturn"/>
 	</View>
 </Alloy>

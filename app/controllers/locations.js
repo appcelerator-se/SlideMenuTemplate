@@ -93,4 +93,6 @@ function onReturn(e){
 		
 	Ti.API.info(JSON.stringify(e));
 	forwardGeocoder(e.value);
+	
+	$.addressField.blur();
 }
