@@ -30,40 +30,75 @@ function mapAdjustRegion(e){
 }
 
 function addContact(e) {
+	
 	Ti.API.info('Saving contact...');
-	var workAddress1 = {
-		'CountryCode' : 'us',
-		'Street' : '440 N. Bernardo Avenue',
-		'City' : 'Mountain View',
-		'State' : 'California',
-		'Country' : 'United States',
-		'ZIP' : '94043'
+	
+	var performAddressBookFunction = function(){
+		var workAddress1 = {
+		  'CountryCode': 'us',
+		  'Street':  '440 N. Bernardo Avenue',
+		  'City': 'Mountain View',
+		  'State': 'California',
+		  'Country': 'United States',
+		  'ZIP': '94043'
+		};
+		
+		Ti.Contacts.createPerson({
+			firstName : 'Kelly',
+			lastName : 'Smith',
+			organization: 'Appcelerator, Inc.',
+			image: $.profilePicture.toBlob(),
+			email: {
+				work:['kelly.smith@appcelerator.com']
+			}, 
+			phone: {
+				mobile:['512-555-1212']
+			},
+			address : {
+				work : [workAddress1]
+			},
+			instantMessage:{
+				home:[
+					{
+						service: 'Skype',
+						username: 'kelly.smith'
+					},
+				]
+			}
+		});
+		alert('Contact saved');
+		
+		/*
+		Ti.Analytics.featureEvent(app.profile.saveContact)
+		 */
 	};
-
-	Ti.Contacts.createPerson({
-		firstName : 'Kelly',
-		lastName : 'Smith',
-		organization: 'Appcelerator, Inc.',
-		image: $.profilePicture.toBlob(),
-		email: {
-			work:['kelly.smith@appcelerator.com']
-		}, 
-		phone: {
-			mobile:['512-555-1212']
-		},
-		address : {
-			work : [workAddress1]
-		},
-		instantMessage:{
-			home:[
-				{
-					service: 'Skype',
-					username: 'kelly.smith'
-				},
-			]
+	
+	/*
+	 * IOS requires permission grantgs on iOS6 and above
+	 */
+	if(OS_IOS){
+		
+		var addressBookDisallowed = function(){
+			Ti.API.error("ERROR STORING CONTACT - PERMISSION DENIED");
+		};
+		
+		if (Ti.Contacts.contactsAuthorization == Ti.Contacts.AUTHORIZATION_AUTHORIZED){
+		    performAddressBookFunction();
+		} else if (Ti.Contacts.contactsAuthorization == Ti.Contacts.AUTHORIZATION_UNKNOWN){
+		    Ti.Contacts.requestAuthorization(function(e){
+		        if (e.success) {
+		            performAddressBookFunction();
+		        } else {
+		            addressBookDisallowed();
+		        }
+		    });
+		} else {
+		    addressBookDisallowed();
 		}
-	});
-	alert('Contact saved');
+	}
+	else if(OS_ANDROID){ // ANDROID HAS PERMISSIONS IN THE MANIFEST
+		performAddressBookFunction();
+	}
 };
 
 function shareContact() {

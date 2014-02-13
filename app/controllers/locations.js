@@ -86,6 +86,11 @@ function forwardGeocoder(address){
  * TextField event handler for the return button (see the XML for TextField)
  */
 function onReturn(e){
+	
+	/*
+	Ti.Analytics.featureEvent('app.location.addressLookup');
+	*/
+		
 	Ti.API.info(JSON.stringify(e));
 	forwardGeocoder(e.value);
 }

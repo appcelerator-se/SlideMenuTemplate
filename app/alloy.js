@@ -104,8 +104,8 @@ Alloy.Globals.App = {
 					 * Record the navigation event in Analytics if a currentController exists otherwise create a feature event for the new session
 					 */
 					if(!OS_BLACKBERRY){
-					this.currentController && Ti.Analytics.navEvent( this.currentController.getView().id, _controller) 
-										   || Ti.Analytics.featureEvent("new_session", null);
+						this.currentController && Ti.Analytics.navEvent( this.currentController.getView().id, _controller) 
+										   || Ti.Analytics.featureEvent("app.newSession", null);
 					}
 					
 					/**

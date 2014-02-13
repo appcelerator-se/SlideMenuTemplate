@@ -18,10 +18,20 @@ App.Navigator.init({
  * It is responsible for sliding the menu out and back
  */
 function showhidemenu(e){
+	
 	var direction = null;
-	if(e){
+	if(e && e.direction){
 		direction = e.direction;
+		/*
+		Ti.Analytics.featureEvent('app.showMenu.swipe');
+		*/
 	}
+	else {
+		/*
+		Ti.Analytics.featureEvent('app.showMenu.click');
+		*/
+	}
+	
 	App.Navigator.showhidemenu(direction);
 }
 
