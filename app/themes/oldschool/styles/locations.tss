@@ -1,28 +1,20 @@
-".container":{
-	layout:'vertical'
+
+"TextField":{
+	top: 15,
+	height: 45,
+	width: "90%",
+	borderColor: "#999",
+	borderRadius: 0,
+	backgroundColor: "#fff",
+	paddingLeft:15,
+	paddingRight: 35
+},
+
+".icon":{
+	top: 15,
+	right: "5%",
+	color: '#999',
+	width: 40,
+	height: 40
 }
-"#menuBar":{
-	backgroundColor: "#f5f6f9",
-	width: Ti.UI.FILL,
-	height: "50dp",
-	layout: "horizontal"
-},
-".tbButton":{
-	width: "33%",
-	height: "50dp"
-},
-"#statusBtn":{
-	width: "73dp",
-	height: "19dp",
-	image: "/images/statusbtn.png"
-},
-"#photoBtn":{
-	width: "73dp",
-	height: "19dp",
-	image: "/images/photobtn.png"
-},
-"#checkinBtn":{
-	width: "73dp",
-	height: "19dp",
-	image: "/images/checkinbtn.png"
-}
+
