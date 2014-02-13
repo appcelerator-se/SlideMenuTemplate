@@ -1,7 +1,7 @@
 <Alloy>
 	<TableViewRow id='listRow'>
 		<View id='rowContainer'>
-			<Widget id="filetype" class="icon black itemActionButton no-touch" src="net.hoyohoyo.iconiclabel" text="Like" icon="icon-file" />
+			<Widget id="filetype" class="icon itemActionButton no-touch" src="net.hoyohoyo.iconiclabel" text="Like" icon="icon-file" />
 			<Label id='filename'>Acme_Sales_Brochure.pdf</Label>
 			<Label id='timeAgo'>30 minutes ago</Label>
 			<Label id='author'>This is my status update.</Label>

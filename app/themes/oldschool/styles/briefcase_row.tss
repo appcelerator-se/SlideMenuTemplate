@@ -1,9 +1,12 @@
+"Label":{
+	color:"#ececec"	
+},
 "#rowContainer":{
 	top:0,
 	height: Ti.UI.FILL,
 	width: Ti.UI.FILL,
-	backgroundColor: '#fff'
-}
+	backgroundColor: '#363636'
+},
 "#listRow":{
 	height: 120,
 	selectionStyle: "NONE",
@@ -23,7 +26,7 @@
 "#filename":{
 	top: 5,
 	left: 80,
-	color: "#941100",
+	color: "#fff",
 	font: {
 		fontSize : "16dp",
 		fontWeight: "bold"
@@ -59,12 +62,12 @@
 	top: 80,
 	height: 40,
 	width: Ti.UI.FILL,
-	backgroundColor: "#eff2f5",
+	backgroundColor: "#636363",
 	layout: "horizontal"
 },
 ".itemActionButton":{
 	width: "50%",
 	height: 40,
 	textAlign: 'center',
-	color: '#ae331f'
+	color: '#ececec'
 }

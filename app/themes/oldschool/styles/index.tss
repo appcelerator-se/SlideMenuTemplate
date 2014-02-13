@@ -39,7 +39,7 @@
 	left: 0	
 },
 "#navigationBar":{
-	backgroundImage: "/images/iconBarBG.png",
+	backgroundColor: "#363636",
 	width: Ti.UI.FILL,
 	height: 54,
 	border: 1,
@@ -54,7 +54,7 @@
 	font:{
 		fontFamily: 'FontAwesome', fontSize: 20 
 	},
-	color: "#68160f",
+	color: "#ff160f",
 	height: 50,
 	width: 50,
 	textAlign:"center",

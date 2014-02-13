@@ -8,12 +8,17 @@
 	height: 45,
 	width: "90%",
 	borderColor: "#999",
-	color: "#666",
+	color: "#FF5400",
 	borderRadius: 0,
-	backgroundColor: "#fff",
+	backgroundColor: "#000",
 	paddingLeft:15,
-	paddingRight: 35
+	paddingRight: 50,
+	opacity: 0.5
 },
+
+".container":{
+	backgroundColor: "#000",
+}
 
 ".icon":{
 	top: 15,
