@@ -7,7 +7,7 @@
 				<Label id="job" class='h5 white no-touch' >Account Rep</Label>
 				<Label id="company" class='h5 white no-touch' >Appcelerator, Inc</Label>
 			</View>
-			<ScrollableView class="top-buffer no-touch" showPagingControl="true" formFactor="handheld" pagingControlHeight="20">
+			<ScrollableView class="top-buffer no-touch" formFactor="handheld" pagingControlHeight="20">
 				<View class="vgroup size top-buffer">
 					<View class='hgroup redbkg span-width'>
 						<Widget class="icon white left-buffer" src="net.hoyohoyo.iconiclabel"  icon="icon-qrcode" />

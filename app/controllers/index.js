@@ -36,30 +36,24 @@ function showhidemenu(e){
 }
 
 
-/*
- * Set Width of Main Window and child views to the system width
+/**
+ * iOS Specific - Set Width of Main Window and child views to the system width
  */
-function updateWindowSize(){
-	var width;
-	
-	if(OS_ANDROID){
-		var dpi = Ti.Platform.displayCaps.dpi;
-		width = Ti.Platform.displayCaps.platformWidth +'px'; // <-- forcing system width over dp for Android
-	}
-	else {
+if(OS_IOS){
+	function updateWindowSize(){
+		var width;
+		
 		width = Ti.Platform.displayCaps.platformWidth;
+		$.index.width = $.page.width = $.mainWindow.width = width;
 	}
-
-	$.index.width = $.page.width = $.mainWindow.width = width;
+	
+	Ti.Gesture.addEventListener('orientationchange', updateWindowSize);
+	
+	/*
+	 * Set WindowSize based on screen size (see function below)
+	 */
+	updateWindowSize();
 }
-
-Ti.Gesture.addEventListener('orientationchange', updateWindowSize);
-
-/*
- * Set WindowSize based on screen size (see function below)
- */
-updateWindowSize();
-
 
 /**
  * Open the main application Window

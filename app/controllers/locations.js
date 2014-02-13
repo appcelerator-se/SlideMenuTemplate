@@ -26,7 +26,8 @@ function setLocation(){
 	    longitude: result.geometry.location.lng,
 	    title: result.address_components[0].long_name + " " + result.address_components[1].long_name,
 	    subtitle: result.address_components[2].long_name +"," + result.address_components[4].long_name,
-	    pincolor:Ti.Map.ANNOTATION_RED
+	    pincolor:Ti.Map.ANNOTATION_RED,
+	    animate: true
 	});
 	
 	/**

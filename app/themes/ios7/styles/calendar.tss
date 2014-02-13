@@ -2,34 +2,30 @@
 /*
  * Element Styles
  */
-"Label":{
-	color:"#ececec"
-}
 
 "TableViewRow":{
 	selectedBackgroundColor:"#dcdcdc"
 }
 
 "#tableView" : {
-	backgroundColor: "#363636",
+	backgroundColor: "#ececec",
 	separatorColor: "#9b9d9f",
 }
 
 "#newVisitorBtn":{
 	height: 50,
-	backgroundColor: "#000",
-	left:"30%"
+	backgroundColor: "#FFF",
 }
 
 "#dateScroller":{
-	backgroundColor: "#636363"
+	backgroundColor: "#FAFAFA"
 }
 
 /*
  * Classes
  */
 ".container":{
-	backgroundColor: "#363636",
+	backgroundColor: "#ececec",
 },
 
 ".orange-txt":{

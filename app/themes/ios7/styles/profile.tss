@@ -1,3 +1,7 @@
+"ScrollableView":{
+	showPagingControl: true
+}
+
 ".container": {
 	backgroundGradient:{
 		type: 'linear',
