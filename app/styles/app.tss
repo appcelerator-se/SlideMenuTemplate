@@ -101,6 +101,14 @@
 ".left":{
 	left: 0
 },
+
+/**
+ * 	Rounded
+ */
+".rounded":{
+	borderRadius: 7
+}
+
 /**
  * Common Sizes
  */
@@ -335,6 +343,8 @@
 	font:{
 		fontFamily: 'FontAwesome', fontSize: 24 
 	}
+},
+
+'.no-touch':{
+	touchEnabled:false
 }
-
-

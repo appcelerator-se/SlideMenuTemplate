@@ -1,17 +1,17 @@
 <Alloy>
 	<TableViewRow id='listRow'>
 		<View id='rowContainer'>
-			<Widget id="filetype" class="icon black itemActionButton" src="net.hoyohoyo.iconiclabel" text="Like" icon="icon-file" touchEnabled="false" />
+			<Widget id="filetype" class="icon black itemActionButton no-touch" src="net.hoyohoyo.iconiclabel" text="Like" icon="icon-file" />
 			<Label id='filename'>Acme_Sales_Brochure.pdf</Label>
 			<Label id='timeAgo'>30 minutes ago</Label>
 			<Label id='author'>This is my status update.</Label>
 			<View id='grayLine' bottom='51'></View>
 			<View id='bottomActions'>
 				<View class='itemActionButton'>
-					<Widget id="favoriteBtn" class="icon red itemActionButton" src="net.hoyohoyo.iconiclabel" icon="icon-star-empty" touchEnabled="false" />
+					<Widget id="favoriteBtn" class="icon red itemActionButton no-touch" src="net.hoyohoyo.iconiclabel" icon="icon-star-empty"  />
 				</View>
 				<View  class='itemActionButton'>
-					<Widget id="commentBtn" class="icon red itemActionButton" src="net.hoyohoyo.iconiclabel" icon="icon-comment-alt" touchEnabled="false" />
+					<Widget id="commentBtn" class="icon red itemActionButton no-touch" src="net.hoyohoyo.iconiclabel" icon="icon-comment-alt"  />
 				</View>
 			</View>
 		</View>

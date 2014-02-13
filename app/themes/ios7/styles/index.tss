@@ -57,7 +57,7 @@
 	height: 54
 },
 ".topActionButton":{
-	top: 10,
+	top: 5,
 	font:{
 		fontFamily: 'FontAwesome', fontSize: 24 
 	},
@@ -82,7 +82,7 @@
 },
 
 "#menubtn":{
-	top: 10,
+	top: 5,
 	left: 0,
 	width: "55dp",
 	height: "54dp"

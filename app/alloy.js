@@ -24,6 +24,45 @@ Alloy.Globals.App = {
 	},
 	
 	/**
+	 * Titanium Platform SDK Information
+	 *
+	 * @type {Object}
+	 * @param {String} version The version of the Titanium SDK
+	 * @param {Number} versionMajor The major version of the Titanium SDK
+	 * @param {Number} versionMinor The minor version of the Titanium SDK
+	 */
+	SDK: {
+		version: Ti.version,
+		versionMajor: parseInt(Ti.version.split(".")[0], 10),
+		versionMinor: parseInt(Ti.version.split(".")[1], 10),
+	},
+	
+	/**
+	 * Device information, some come from the Ti API calls and can be referenced
+	 * from here so multiple bridge calls aren't necessary, others generated here
+	 * for ease of calculations and such.
+	 *
+	 * @type {Object}
+	 * @param {String} version The version of the OS
+	 * @param {Number} versionMajor The major version of the OS
+	 * @param {Number} versionMinor The minor version of the OS
+	 * @param {Number} width The width of the device screen
+	 * @param {Number} height The height of the device screen
+	 * @param {Number} dpi The DPI of the device screen
+	 * @param {String} orientation The device orientation, either "landscape" or "portrait"
+	 * @param {String} statusBarOrientation A Ti.UI orientation value
+	 */
+	Device: {
+		version: Ti.Platform.version,
+		versionMajor: parseInt(Ti.Platform.version.split(".")[0], 10),
+		versionMinor: parseInt(Ti.Platform.version.split(".")[1], 10),
+		width: null,
+		height: null,
+		dpi: Ti.Platform.displayCaps.dpi,
+		orientation: Ti.Gesture.orientation == Ti.UI.LANDSCAPE_LEFT || Ti.Gesture.orientation == Ti.UI.LANDSCAPE_RIGHT ? "landscape" : "portrait"
+	},
+	
+	/**
 	 * Navigation Widget using for routing controllers
 	 * @type {Object}
 	 */
@@ -278,5 +317,9 @@ Alloy.Globals.App = {
 };
 
 
+/**
+ * Replace the Map with the Map Module
+ */
+Ti.Map = ((OS_IOS) && (Alloy.Globals.App.SDK.versionMajor >=3 && Alloy.Globals.App.SDK.versionMinor >=2)) ? require('ti.map') : Ti.Map;
 
 

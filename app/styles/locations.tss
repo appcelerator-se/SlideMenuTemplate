@@ -1,28 +1,20 @@
 ".container":{
-	layout:'vertical'
-}
-"#menuBar":{
-	backgroundColor: "#f5f6f9",
-	width: Ti.UI.FILL,
-	height: "50dp",
-	layout: "horizontal"
 },
-".tbButton":{
-	width: "33%",
-	height: "50dp"
+"#mapview":{
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL
 },
-"#statusBtn":{
-	width: "73dp",
-	height: "19dp",
-	image: "/images/statusbtn.png"
+"TextField":{
+	top: 10,
+	backgroundColor: "#fff",
+	border:0,
+	width: "90%",
+	height: "45",
+	borderRadius: 0,
+	borderColor: "#999",
+	paddingLeft: 15,
+	paddingRight:15
 },
-"#photoBtn":{
-	width: "73dp",
-	height: "19dp",
-	image: "/images/photobtn.png"
-},
-"#checkinBtn":{
-	width: "73dp",
-	height: "19dp",
-	image: "/images/checkinbtn.png"
+"TextField[platform=ios]":{
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_LINE
 }

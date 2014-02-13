@@ -4,13 +4,13 @@
     "env:test": {},
     "env:production": {},
     "os:ios": {
-    	"theme":"ios7"
+        "theme": "ios7"
     },
     "os:android": {
-    	"theme":"oldschool"
+        "theme": "oldschool"
     },
-    "os:blackberry":{
-    	"theme":"default"
+    "os:blackberry": {
+        "theme": "default"
     },
     "dependencies": {
         "net.hoyohoyo.iconiclabel": "1.3"

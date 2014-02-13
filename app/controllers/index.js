@@ -11,16 +11,7 @@ App.Navigator.init({
 	startPage: 'home'	// <- The page you want to start your application
 });
 
-/*
- * Set WindowSize based on screen size (see function below)
- */
-updateWindowSize();
 
-
-/**
- * Open the main application Window
- */
-$.index.open();
 
 /**
  * This function is tied to the click event on the navBar menuBtn element.
@@ -32,34 +23,6 @@ function showhidemenu(e){
 		direction = e.direction;
 	}
 	App.Navigator.showhidemenu(direction);
-}
-
-/**
- * This is a test function that can be used to test click events from other elements.
- * Initially linked to the topActions ImageViews.
- * @param {Object} e
- */
-
-$.friendsBtn.icon.addEventListener('click', testclick);
-$.messagesBtn.icon.addEventListener('click', testclick);
-$.notificationsBtn.icon.addEventListener('click', testclick);
-
-function testclick(e){
-	alert(e.source.id + " clicked");
-}
-
-
-$.friendsBtn.icon.addEventListener('touchstart', emphasize);
-$.friendsBtn.icon.addEventListener('touchend', emphasize);
-
-$.messagesBtn.icon.addEventListener('touchstart', emphasize);
-$.messagesBtn.icon.addEventListener('touchend', emphasize);
-
-$.notificationsBtn.icon.addEventListener('touchstart', emphasize);
-$.notificationsBtn.icon.addEventListener('touchend', emphasize);
-
-function emphasize(e){
-	e.source.opacity = (e.source.opacity === 1.0) ? 0.5 : 1.0;
 }
 
 
@@ -82,4 +45,13 @@ function updateWindowSize(){
 
 Ti.Gesture.addEventListener('orientationchange', updateWindowSize);
 
+/*
+ * Set WindowSize based on screen size (see function below)
+ */
+updateWindowSize();
 
+
+/**
+ * Open the main application Window
+ */
+$.index.open();

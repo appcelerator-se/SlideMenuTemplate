@@ -1,15 +1,42 @@
+<!--
+The Application Menu
+
+There is a lot going on here, so lets break it down into basics.
+
+
+-->
+
 <Alloy>
 	<View class="container">
+		<!-- 
+			Profile Button
+			A View structure that includes a background, an iconicLabel Widget for the icon and a Label for the text. 
+		-->
 		<View id="btnProfile" class="span-width top menu-btn" page="profile">
-			<View class="menu-btn-background" touchEnabled="false" />
-			<Widget class="size menuHeaderIcon" src="net.hoyohoyo.iconiclabel" icon="icon-user" touchEnabled="false" />
-			<Label class="size white profile" touchEnabled="false">My Profile</Label>
+			<View class="menu-btn-background  no-touch"  />
+			<Widget class="size menuHeaderIcon  no-touch" src="net.hoyohoyo.iconiclabel" icon="icon-user"  />
+			<Label class="size white profile  no-touch" >My Profile</Label>
 		</View>
+		
+		<!-- 
+			Menu Table
+			TableView contains rows that map to view controllers (the page property). To add a new page to the menu, simply copy and paste
+			the following code into the TableView and update the `page` attribute with your controller filename.
+			
+			<TableViewRow className="menuRow" page="<YOUR CONTROLLER FILENAME GOES HERE>">
+				<Widget class="menuIcon" src="net.hoyohoyo.iconiclabel" icon="<ICON-CODE>"/>
+				<Label class="size" >MENU TITLE</Label>
+				<View class="white-line transparent" />
+			</TableViewRow>
+			
+			NOTE: to find available icon-codes, see the Widget documentation at:
+			https://github.com/hoyo/net.hoyohoyo.iconiclabel
+		-->
 		<TableView id="tableView">
 			<TableViewSection headerView="menuSectionHeader">
-				<TableViewRow className="menuRow" page="home">
-					<Widget class="menuIcon" src="net.hoyohoyo.iconiclabel" icon="icon-home"/>
-					<Label class="size" >Home</Label>
+				<TableViewRow className="menuRow" page="calendar">
+					<Widget class="menuIcon" src="net.hoyohoyo.iconiclabel" icon="icon-money"/>
+					<Label class="size" >Expenses</Label>
 					<View class="white-line transparent" />
 				</TableViewRow>
 				<TableViewRow className="menuRow" page="briefcase">
@@ -22,17 +49,17 @@
 					<Label class="size" >Locations</Label>
 					<View class="white-line transparent" />
 				</TableViewRow>
-				<TableViewRow className="menuRow" page="photos">
-					<Widget class="menuIcon" src="net.hoyohoyo.iconiclabel" icon="icon-picture" />
-					<Label class="size" >Photos</Label>
-					<View class="white-line transparent" />
-				</TableViewRow>
 			<TableViewSection>
 		</TableView>
+		<!--
+			Settings Button
+			
+			Its the same as the profile button, but triggers the Settings Modal Page
+		-->
 		<View id="settingsBtn" class="span-width menu-btn" page="settings">
-			<View id="footerBkg" class="menu-btn-background" touchEnabled="false"/>
-			<Widget class="size menuHeaderIcon" src="net.hoyohoyo.iconiclabel" icon="icon-cog" touchEnabled="false"/>
-			<Label class="size white profile" touchEnabled="false">Settings</Label>
+			<View id="footerBkg" class="menu-btn-background no-touch" />
+			<Widget class="size menuHeaderIcon no-touch" src="net.hoyohoyo.iconiclabel" icon="icon-cog" />
+			<Label class="size white profile no-touch" >Settings</Label>
 		</View>
 	</View>
 </Alloy>

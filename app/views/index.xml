@@ -30,7 +30,7 @@
 				-->	
 				<View id="navigationBar">
 					<View id="menubtn" onClick="showhidemenu">
-						<Widget class='icon white' src="net.hoyohoyo.iconiclabel" icon="icon-reorder" touchEnabled="false"/>
+						<Widget class='icon white no-touch' src="net.hoyohoyo.iconiclabel" icon="icon-reorder" />
 					</View>
 					<View id="topActions" class="span-width"> 
 						<Widget id="friendsBtn" class="topActionButton size" src="net.hoyohoyo.iconiclabel" icon="icon-group" />

@@ -1,16 +1,6 @@
 <Alloy>
-	<View class="container">
-		<View id="menuBar">
-			<View class="tbButton">
-				<ImageView id="statusBtn" ></ImageView>
-			</View>
-			<View  class="tbButton">
-				<ImageView id="photoBtn"></ImageView>
-			</View>
-			<View  class="tbButton">
-				<ImageView id="checkinBtn"></ImageView>
-			</View>
-		</View>
-		<View ns="Ti.Map" />
+	<View>
+		<View ns="Ti.Map" id="mapview" />
+		<TextField id="addressField" onReturn="onReturn" />
 	</View>
 </Alloy>

@@ -1,3 +1,7 @@
 'Label[platform=android]': {
    color: '#fff' // Override bootstrap reset
 }
+
+'gray':{
+	
+}

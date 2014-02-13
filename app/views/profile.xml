@@ -1,13 +1,13 @@
 <Alloy>
 	<View class="container fill">
 		<View class="vgroup">
-			<ImageView id="profilePicture" class="top-buffer" touchEnabled="false"/>
+			<ImageView id="profilePicture" class="top-buffer no-touch" />
 			<View class="vgroup size">
-				<Label id="name" class='h3 white top-buffer' touchEnabled="false">Kelly Smith</Label>
-				<Label id="job" class='h5 white' touchEnabled="false">Account Rep</Label>
-				<Label id="company" class='h5 white' touchEnabled="false">Appcelerator, Inc</Label>
+				<Label id="name" class='h3 white top-buffer no-touch' >Kelly Smith</Label>
+				<Label id="job" class='h5 white no-touch' >Account Rep</Label>
+				<Label id="company" class='h5 white no-touch' >Appcelerator, Inc</Label>
 			</View>
-			<ScrollableView class="top-buffer" showPagingControl="true" formFactor="handheld" pagingControlHeight="20">
+			<ScrollableView class="top-buffer no-touch" showPagingControl="true" formFactor="handheld" pagingControlHeight="20">
 				<View class="vgroup size top-buffer">
 					<View class='hgroup redbkg span-width'>
 						<Widget class="icon white left-buffer" src="net.hoyohoyo.iconiclabel"  icon="icon-qrcode" />
@@ -42,19 +42,17 @@
 					</View>
 					<View  ns="Ti.Map"
 						id="mapview" 
-						class='buffer border-dark-thick'
-						animate="false" 
-						regionFit="true" 
-						userLocation="false" 
-						mapType="Ti.Map.STANDARD_TYPE">
+						class='buffer border-dark-thick'>
 
-						<!-- Annotations can be added dynamically based on Datasource --> 
-						<Annotation id="map"
-						latitude="30.631256" longitude="-97.675422"
-						title="Home Office" subtitle="Georgetown, TX"
-						pincolor="Titanium.Map.ANNOTATION_RED" 
-						myid="1"/>
-
+						<!-- To Account for later map modules, moving annotation to codebase
+							Annotations can be added dynamically based on Datasource 
+						<Annotation 
+							id="map"
+							latitude="30.631256" longitude="-97.675422"
+							title="Home Office" subtitle="Georgetown, TX"
+							pincolor="Titanium.Map.ANNOTATION_RED" 
+							myid="1"/>
+						--> 
 					</View>
 				</View>
 			</ScrollableView>
@@ -94,17 +92,9 @@
 					<View  ns="Ti.Map"
 						id="mapview" 
 						class='buffer border-dark-thick'
-						animate="false" 
-						regionFit="true" 
-						userLocation="false" 
 						mapType="Ti.Map.STANDARD_TYPE"> 
 
-						<!-- Annotations can be added dynamically based on Datasource --> 
-						<Annotation id="map"
-						latitude="30.631256" longitude="-97.675422"
-						title="Home Office" subtitle="Georgetown, TX"
-						pincolor="Titanium.Map.ANNOTATION_RED" 
-						myid="1"/>
+						
 
 					</View>
 				</View>

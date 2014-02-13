@@ -1,0 +1,95 @@
+<Alloy>
+	<View class="vgroup fill container">
+		<ScrollView id="dateScroller" class="hgroup span-width">
+			<Label class="col5 gray h5 left-buffer center">Earlier</Label>
+			<Label class="col5 gray h4 center">15</Label>
+			<Label class="col5 orange-txt h4-bold center">16</Label>
+			<Label class="col5 gray h4 center">17</Label>
+			<Label class="col5 gray h5 center">Later</Label>
+		</ScrollView>
+		<View class="gray-line" />
+		<TableView id="tableView" class="top-buffer">
+			<TableViewRow class="size">
+				<View class="vgroup top span-width">
+					<View class="hgroup size left">
+						<!--<Widget class="icon white left" src="net.hoyohoyo.iconiclabel" icon="icon-circle-arrow-right"/>-->
+						<Label class="h1 bold left-buffer gray  size">Today</Label>
+					</View>
+					<Label class="h5 left-buffer gray">Monday, Decemeber 9, 2013</Label>
+				</View>
+			</TableViewRow>
+			<TableViewRow class="size">
+				<View id="newVisitorBtn" class="hgroup size white-bg buffer rounded">
+					<Label class="icon orange-txt buffer size">+</Label>
+					<Label class="h4 buffer center orange-txt">New Expense</Label>
+				</View>
+			</TableViewRow>
+			<TableViewRow class="calendarItem" class="size">
+				
+				<View class="hgroup span-width buffer">
+					<View class="vgroup size">
+						<Label class="cal-lbl gray size left-buffer right-buffer">$324.54</Label>
+						<Widget class='icon gray no-touch' src="net.hoyohoyo.iconiclabel" icon="icon-credit-card" />
+					</View>
+					<View class="vgroup size buffer">
+						<Label class="cal-lbl gray size left">Avis</Label>
+						<Label class="h5 gray size left">Rental Car</Label> 
+					</View>
+				</View>
+			</TableViewRow>
+			<TableViewRow class="calendarItem" class="size">
+				
+				<View class="hgroup span-width buffer">
+					<View class="vgroup size">
+						<Label class="cal-lbl gray size left-buffer right-buffer">$55.00</Label>
+						<Widget class='icon gray no-touch' src="net.hoyohoyo.iconiclabel" icon="icon-money" />
+					</View>
+					<View class="vgroup size buffer">
+						<Label class="cal-lbl gray size left">P.F. Changs</Label>
+						<Label class="h5 gray size left">Dinner with Client</Label> 
+					</View>
+				</View>
+			</TableViewRow>
+			<TableViewRow class="calendarItem" class="size">
+				
+				<View class="hgroup span-width buffer">
+					<View class="vgroup size">
+						<Label class="cal-lbl gray size left-buffer right-buffer">$3.56</Label>
+						<Widget class='icon gray no-touch' src="net.hoyohoyo.iconiclabel" icon="icon-money" />
+					</View>
+					<View class="vgroup size buffer">
+						<Label class="cal-lbl gray size left">Starbucks</Label>
+						<Label class="h5 gray size left">Coffee Break</Label> 
+					</View>
+				</View>
+			</TableViewRow>
+			<TableViewRow class="calendarItem" class="size">
+				
+				<View class="hgroup span-width buffer">
+					<View class="vgroup size">
+						<Label class="cal-lbl gray size left-buffer right-buffer">$36.75</Label>
+						<Widget class='icon gray no-touch' src="net.hoyohoyo.iconiclabel" icon="icon-credit-card" />
+					</View>
+					<View class="vgroup size buffer">
+						<Label class="cal-lbl gray size left">Texaco</Label>
+						<Label class="h5 gray size left">Gas</Label> 
+					</View>
+				</View>
+			</TableViewRow>
+			<TableViewRow class="calendarItem" class="size">
+				
+				<View class="hgroup span-width buffer">
+					<View class="vgroup size">
+						<Label class="cal-lbl gray size left-buffer right-buffer">$12.56</Label>
+						<Widget class='icon gray no-touch' src="net.hoyohoyo.iconiclabel" icon="icon-money" />
+					</View>
+					<View class="vgroup size buffer">
+						<Label class="cal-lbl gray size left">In-N-Out Burger</Label>
+						<Label class="h5 gray size left">Lunch</Label> 
+					</View>
+				</View>
+			</TableViewRow>
+		</TableView>
+	</View>
+
+</Alloy>

@@ -7,6 +7,15 @@ $.addContactBtn.icon.addEventListener('click', addContact);
 if(OS_IOS){
 	$.mapview.addEventListener('complete', mapAdjustRegion);
 }
+var mapAnnotation = Ti.Map.createAnnotation({
+    latitude:30.631256,
+    longitude:-97.675422,
+    title:"My Office",
+    subtitle:'Georgetown, TX',
+    pincolor:Ti.Map.ANNOTATION_RED,
+    myid:1 // Custom property to uniquely identify this annotation.
+});
+$.mapview.addAnnotation(mapAnnotation);
 
 
 function mapAdjustRegion(e){
@@ -16,6 +25,8 @@ function mapAdjustRegion(e){
 		latitudeDelta:0.01,
 		longitudeDelta:0.01
 	};
+	
+	
 }
 
 function addContact(e) {
