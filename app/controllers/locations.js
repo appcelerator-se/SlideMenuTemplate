@@ -1,5 +1,6 @@
 
 var args = arguments[0] || {};
+var googleAPI = require('googleAPI');
 
 /**
  * URL Reference for Google Geolocation API
@@ -54,14 +55,17 @@ function forwardGeocoder(address){
 	
 	if(address){
 		
+		googleAPI.Geolocation.forwardGeocoder(address, setLocation, function(){alert("Error with API");});
+		
+		/*
 		/**
 		 * Format URL for forward Decoder Address Lookup
-		 */
+		 
 		var url = String.format(GOOGLE_API, address.replace(/ /g, "+"));
 
 		/**
 		 * Create HTTPClient for REST call to Google Geolocation API
-		 */
+		
 		var xhr = Ti.Network.createHTTPClient({
 			onload: setLocation,
 			onerror: function forwardGeocoderError(e){
@@ -73,13 +77,14 @@ function forwardGeocoder(address){
 		
 		/**
 		 * Open the HTTP Request, specifying GET as method
-		 */
+		
 		xhr.open("GET", url );
 		
 		/**
 		 * OK now Send it
-		 */
+		
 		xhr.send();
+		*/
 	}
 }
 
@@ -97,3 +102,5 @@ function onReturn(e){
 	
 	$.addressField.blur();
 }
+
+$.myFunc = function(){ alert("Hello World");}

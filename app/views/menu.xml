@@ -49,6 +49,11 @@ There is a lot going on here, so lets break it down into basics.
 					<Label class="size" >Locations</Label>
 					<View class="white-line transparent" />
 				</TableViewRow>
+				<TableViewRow className="menuRow" page="dashboard">
+					<Widget class="menuIcon" src="net.hoyohoyo.iconiclabel" icon="icon-dashboard"/>
+					<Label class="size" >Dashboard</Label>
+					<View class="white-line transparent" />
+				</TableViewRow>
 			<TableViewSection>
 		</TableView>
 		<!--

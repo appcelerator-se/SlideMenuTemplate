@@ -9,6 +9,7 @@
 // object. For example:
 //
 // Alloy.Globals.someGlobalFunction = function(){};
+
 var measurement = require('alloy/measurement');
 /* 
  * App Singleton
@@ -20,7 +21,7 @@ Alloy.Globals.App = {
 	 * Applications Settings
 	 */
 	Settings: {
-		menuWidth: "265dp"
+		menuWidth: "70%"
 	},
 	
 	/**
@@ -32,9 +33,9 @@ Alloy.Globals.App = {
 	 * @param {Number} versionMinor The minor version of the Titanium SDK
 	 */
 	SDK: {
-		version: Ti.version,
-		versionMajor: parseInt(Ti.version.split(".")[0], 10),
-		versionMinor: parseInt(Ti.version.split(".")[1], 10),
+		version: !OS_BLACKBERRY && Ti.version,
+		versionMajor: !OS_BLACKBERRY && parseInt(Ti.version.split(".")[0], 10),
+		versionMinor: !OS_BLACKBERRY && parseInt(Ti.version.split(".")[1], 10),
 	},
 	
 	/**
@@ -54,8 +55,8 @@ Alloy.Globals.App = {
 	 */
 	Device: {
 		version: Ti.Platform.version,
-		versionMajor: parseInt(Ti.Platform.version.split(".")[0], 10),
-		versionMinor: parseInt(Ti.Platform.version.split(".")[1], 10),
+		versionMajor: !OS_BLACKBERRY && parseInt(Ti.Platform.version.split(".")[0], 10),
+		versionMinor: !OS_BLACKBERRY && parseInt(Ti.Platform.version.split(".")[1], 10),
 		width: null,
 		height: null,
 		dpi: Ti.Platform.displayCaps.dpi,
@@ -72,6 +73,7 @@ Alloy.Globals.App = {
 		contentView: null,	// The content area of the mainView - this is linked to the Navigator.open() method
 		currentController: null,	// A reference to the currentController being viewed within the contentView
 		menuVisible: false,			// Flag to denote if the menu view is being show or not
+		
 		
 		/**
 		 * init - initializes the Navigator obejct, by setting the necessary views to the corresponding 
