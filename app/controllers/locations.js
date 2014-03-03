@@ -48,7 +48,11 @@ function setLocation(){
  */
 function forwardGeocoder(address){
 	
+	/** 
+	 * Check to make sure an address was passed in to the function
+	 */
 	if(address){
+		
 		
 		googleAPI.Geolocation.forwardGeocoder(address, setLocation, function(){alert("Error with API");});
 

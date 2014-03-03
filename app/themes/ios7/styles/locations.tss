@@ -7,12 +7,13 @@
 	top: 15,
 	height: 45,
 	width: "90%",
-	color:"#666",
-	borderColor: "#999",
+	color:"#000",
+	borderColor: "#000",
 	borderRadius: 0,
 	backgroundColor: "#fff",
 	paddingLeft:15,
-	paddingRight: 35
+	paddingRight: 35,
+	opacity: 0.75
 },
 
 "TextField[platform=ios]":{
