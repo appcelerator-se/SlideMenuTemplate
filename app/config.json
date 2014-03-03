@@ -1,8 +1,12 @@
 {
-    "global": {},
+    "global": {	
+    },
     "env:development": {},
     "env:test": {},
     "env:production": {},
+    "os:mobileweb":{
+    	 "theme": "default"
+    },
     "os:ios": {
         "theme": "ios7"
     },

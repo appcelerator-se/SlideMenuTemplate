@@ -1,0 +1,87 @@
+".container": {
+	backgroundColor: "transparent",
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	layout:"composite"
+},
+
+"TableView": {
+	backgroundColor: "transparent",
+	separatorColor: "transparent",
+	height: Ti.UI.SIZE,
+	width: Ti.UI.FILL,
+	top: 54
+},
+
+"TableViewRow":{
+	backgroundColor: 'transparent',
+	selectedBackgroundColor:'#222', //<-- want to use alpha so th
+	height: 45,
+	width: Ti.UI.FILL,
+},
+
+"Label":{
+	font:{
+		fontWeight: "normal",
+		fontFamily: "Helvetica Neue",
+		fontSize: 18
+	},
+	color: "#fff",
+	left: 50
+},
+
+"#settingsBtn":{
+	bottom:0
+},
+
+".profile":{
+	top:20,
+	font:{
+		fontSize: 20 
+	}
+},
+
+".menu-btn":{
+	height: 54	
+}
+
+".menu-btn-background":{
+	backgroundColor: "#0290ff",
+	opacity: 0.25,
+	height: Ti.UI.FILL
+},
+
+'.menuHeaderIcon':{
+	top: 20,
+	left: 10,
+	width: 30,
+	height: Ti.UI.SIZE,
+	textAlign: 'center',
+	font:{
+		fontFamily: 'FontAwesome', fontSize: 20 
+	},
+	color: "#fff"
+},
+
+".footer":{
+	backgroundColor: 'transparent',
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	bottom: 0
+},
+
+'.menuIcon':{
+	left: 10,
+	width: 30,
+	height: 54,
+	textAlign: 'center',
+	font:{
+		fontFamily: 'FontAwesome', fontSize: 18 
+	},
+	color: "#fff"
+},
+
+".white-line":{
+	bottom: 0
+}
+

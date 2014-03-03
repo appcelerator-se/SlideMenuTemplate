@@ -33,7 +33,6 @@ There is a lot going on here, so lets break it down into basics.
 			https://github.com/hoyo/net.hoyohoyo.iconiclabel
 		-->
 		<TableView id="tableView">
-			<TableViewSection headerView="menuSectionHeader">
 				<TableViewRow className="menuRow" page="home">
 					<Widget class="menuIcon" src="net.hoyohoyo.iconiclabel" icon="icon-home"/>
 					<Label class="size" >Home</Label>
@@ -54,7 +53,6 @@ There is a lot going on here, so lets break it down into basics.
 					<Label class="size" >Locations</Label>
 					<View class="white-line transparent" />
 				</TableViewRow>
-			<TableViewSection>
 		</TableView>
 		<!--
 			Settings Button

@@ -53,9 +53,10 @@ function forwardGeocoder(address){
 	 */
 	if(address){
 		
-		
+		/**
+		 * Contact Google GeoCoder API (See lib)
+		 */
 		googleAPI.Geolocation.forwardGeocoder(address, setLocation, function(){alert("Error with API");});
-
 	}
 }
 

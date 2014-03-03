@@ -1,0 +1,54 @@
+"ScrollableView":{
+	showPagingControl: true
+}
+
+".container": {
+	backgroundGradient:{
+		type: 'linear',
+		startPoint:{x:"100%", y:0},
+		endPoint: {x:0, y:'100%'},
+		colors: [
+			{color:'#9bafc8', offset: 0.0},
+			{color: '#847b7e', offset: 0.3},
+			{color: '#905b63', offset: 1.0}
+		]
+	},,
+},
+
+".redbkg":{
+	backgroundColor: null,
+	opacity: 0.5
+},
+
+".blackbkg":{
+	backgroundColor: '#000'
+},
+
+".profileBtn":{
+	width: 50,
+	height: 45,
+	textAlign: 'center'
+}
+
+"#profilePicture[formFactor=handheld]":{
+	height: 125,
+	width: 125
+}
+
+"#profilePicture[formFactor=tablet]":{
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE
+}
+
+"#about":{
+	width: "50%"
+}
+
+"ScrollableView[formFactor=handheld]":{
+	height: "45%",
+	pagingControlColor: 'transparent'
+}
+
+"Label":{
+	autoLink: Ti.UI.AUTOLINK_ALL 
+}

@@ -1,0 +1,30 @@
+"#mapview":{
+	userLocation: true,
+	userLocationButton: true
+},
+
+"TextField":{
+	top: 15,
+	height: 45,
+	width: "90%",
+	color:"#000",
+	borderColor: "#000",
+	borderRadius: 0,
+	backgroundColor: "#fff",
+	paddingLeft:15,
+	paddingRight: 35,
+	opacity: 0.75
+},
+
+"TextField[platform=ios]":{
+	borderStyle: Ti.UI.BORDER_STYLE_LINE
+},
+
+".icon":{
+	top: 15,
+	right: "5%",
+	color: '#999',
+	width: 40,
+	height: 40
+}
+

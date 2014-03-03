@@ -1,0 +1,81 @@
+".container": {
+	backgroundColor:"white",
+	orientationModes: [Ti.UI.PORTRAIT,Ti.UI.LANDSCAPE_LEFT,Ti.UI.LANDSCAPE_RIGHT,Ti.UI.UPSIDE_PORTRAIT],
+	navBarHidden: true,
+	exitOnClose: true,
+},
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000"
+},
+".shadow":{
+	right: 0,
+	width: 58,
+	height: Ti.UI.FILL,
+	backgroundGradient: {
+		startPoint: {x:0, y: 0},
+		endPoint: {x: "100%", y: 0},
+		type: 'linear',
+		colors:[
+			{color: 'transparent', offset: 0.0},
+			{color: '#222', offset: 0.05}
+		]
+	}
+},
+"#page":{
+	backgroundColor: "#d6d6d6",
+	left: 0
+},
+
+"#mainWindow":{
+	height: Ti.UI.FILL,	
+	width: Ti.UI.FILL
+},
+
+"#menu":{
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	backgroundColor: '#8ab6e7',
+	left: 0	
+},
+"#navigationBar":{
+	backgroundImage: null,
+	borderColor: '#ae331f',
+	backgroundColor: '#ae331f',
+	border:0,
+	width: Ti.UI.FILL,
+	height: 54
+},
+".topActionButton":{
+	top: 5,
+	left: 25,
+	font:{
+		fontFamily: 'FontAwesome', fontSize: 24 
+	},
+	color: "#68160f",
+	height: 50,
+	width: 50,
+	textAlign:"center",
+	opacity: 0.5
+},
+
+"#topActions":{
+	width: 150,
+	height:50,
+	layout:"horizontal"
+},
+
+"#menuBar":{
+	backgroundColor: "#f5f6f9",
+	width: Ti.UI.FILL,
+	height: "50dp",
+	layout: "horizontal"
+},
+
+"#menubtn":{
+	top: 5,
+	left: 0,
+	width: "55dp",
+	height: "54dp"
+}
