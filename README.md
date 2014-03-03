@@ -5,4 +5,4 @@
 ======================================================
 This application template provides a jumpstart to a simple app with a sliding menu, and multiple sample views to demonstrate core concepts of the Appcelerator Cross Platform Development Environment.
 
-![](https://github.com/appcelerator-se/SlideMenuTemplate/blob/master/ios-expanded.png?raw=true =300x)
+![][expanded-app]
