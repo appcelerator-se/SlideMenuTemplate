@@ -3,7 +3,6 @@
 
 ![][logo] Appcelerator Slide Menu App Template
 ======================================================
-<hr/>
 <br/>
 This application template provides a jumpstart to a simple app with a sliding menu, and multiple sample views to demonstrate core concepts of the Appcelerator Cross Platform Development Environment. While the elements of this application have been flushed out pretty well, it should be considered a `sample` and not ready for production use.
 
@@ -48,9 +47,9 @@ A sample of how to use the modal feature on the Alloy.Globals.App.Navigator obje
 
 # Application Core Object
 
-This Application uses a simplified variant of the App Singleton method you can learn about in our open source project called ![Core](https://github.com/rblalock/core). To read more about this project, I highly suggest you click on over and read about this project. Its well documented and there is a great baseline sample app you can dive into.
+This Application uses a simplified variant of the App Singleton method you can learn about in our open source project called [Core](https://github.com/rblalock/core). To read more about this project, I highly suggest you click on over and read about this project. Its well documented and there is a great baseline sample app you can dive into.
 
-![https://github.com/rblalock/core](https://github.com/rblalock/core)
+[https://github.com/rblalock/core](https://github.com/rblalock/core)
 
 For our project, we are basing the core App object as part of the Alloy Singleton, making it easily accessible from any file within your project. 
 
