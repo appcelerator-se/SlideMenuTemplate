@@ -14,7 +14,8 @@ Highlighted within the application we have tried to provide some basic concepts 
 
 * A Custom Cross Platform Navigation Engine, based on a sliding menu UI paradigm
 * Customized Views and UI based on native elements
-* 
+* Device Access using Native Maps and Contacts
+* Access remote data sources
 
 ##Platforms Support
 <br/>
