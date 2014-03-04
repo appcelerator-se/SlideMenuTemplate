@@ -49,7 +49,6 @@
 },
 ".topActionButton":{
 	top: 5,
-	left: 25,
 	font:{
 		fontFamily: 'FontAwesome', fontSize: 24 
 	},

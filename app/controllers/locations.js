@@ -65,9 +65,10 @@ function forwardGeocoder(address){
  */
 function onReturn(e){
 	
-	/*
+	/**
+	 * Analytics Event
+	 */
 	Ti.Analytics.featureEvent('app.location.addressLookup');
-	*/
 		
 	Ti.API.info(JSON.stringify(e));
 	forwardGeocoder(e.value);
