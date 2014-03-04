@@ -8,13 +8,13 @@
     	 "theme": "default"
     },
     "os:ios": {
-        "theme": "ios7"
+        "theme": "ios"
     },
     "os:android": {
-        "theme": "oldschool"
+        "theme": "android"
     },
     "os:blackberry": {
-        "theme": "oldschool"
+        "theme": "blackberry"
     },
     "dependencies": {
         "net.hoyohoyo.iconiclabel": "1.3"
