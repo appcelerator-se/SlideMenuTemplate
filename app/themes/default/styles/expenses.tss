@@ -19,7 +19,8 @@
 
 "#dateScroller":{
 	backgroundColor: "#FAFAFA",
-	visible:false
+	height: 50,
+	width: Ti.UI.FILL
 }
 
 /*
@@ -43,6 +44,7 @@
 // icon override
 ".icon":{
 	font:{
+		fontFamily: "FontAwesome",
 		fontSize: 18,
 		fontWeight: "light"
 	},
