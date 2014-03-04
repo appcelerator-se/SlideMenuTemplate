@@ -10,7 +10,8 @@
 	 left:5,
 	 textAlign: 'center',
 	 font:{
-	 	fontSize: 48
+		fontFamily: 'FontAwesome', 
+		fontSize: 48 
 	 }
 },
 "#filename":{

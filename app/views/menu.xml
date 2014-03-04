@@ -38,7 +38,7 @@ There is a lot going on here, so lets break it down into basics.
 					<Label class="size" >Home</Label>
 					<View class="white-line transparent" />
 				</TableViewRow>
-				<TableViewRow className="menuRow" page="calendar">
+				<TableViewRow className="menuRow" page="expenses">
 					<Widget class="menuIcon" src="net.hoyohoyo.iconiclabel" icon="icon-money"/>
 					<Label class="size" >Expenses</Label>
 					<View class="white-line transparent" />

@@ -18,7 +18,8 @@
 }
 
 "#dateScroller":{
-	backgroundColor: "#FAFAFA"
+	backgroundColor: "#FAFAFA",
+	visible:false
 }
 
 /*
