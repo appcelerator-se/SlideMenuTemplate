@@ -56,7 +56,7 @@ var _init = function() {
         exports.setText(value);
         break;
       default:
-        if (_.has($.icon, key)) {
+        if (_.has($.icon, key) || OS_MOBILEWEB) {
           $.icon[key] = value;
         } else {
           Ti.API.info('[IconcFont] wrong parameter. (' + key + ')');
