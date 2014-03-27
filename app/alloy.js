@@ -203,7 +203,7 @@ Alloy.Globals.App = {
 				});
 				
 				this.contentView.touchEnabled = this.menuVisible;
-				this.menuVisible = !this.menuVisible
+				this.menuVisible = !this.menuVisible;
 			}
 		}
 	},
