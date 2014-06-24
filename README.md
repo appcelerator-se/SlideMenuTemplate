@@ -75,6 +75,6 @@ Opens a new controller into the associated contentView of the application. This 
 ###Alloy.Globals.App.Navigator.modal(_controller, _options)
 Like open, but this will actually create a modal window to pop up over the existing application. For an example of this, look at the menu.js at the Settings Button event handler.
 
-
+ 
 
 
