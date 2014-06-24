@@ -36,24 +36,21 @@ function showhidemenu(e){
 }
 
 
-/**
- * iOS Specific - Set Width of Main Window and child views to the system width
- */
-if(OS_IOS){
-	function updateWindowSize(){
-		var width;
+
+function updateWindowSize(){
+	var width;
 		
-		width = Ti.Platform.displayCaps.platformWidth;
-		$.index.width = $.page.width = $.mainWindow.width = width;
-	}
-	
-	Ti.Gesture.addEventListener('orientationchange', updateWindowSize);
-	
-	/*
-	 * Set WindowSize based on screen size (see function below)
-	 */
-	updateWindowSize();
+	width = Ti.Platform.displayCaps.platformWidth;
+	$.index.width = $.page.width = $.mainWindow.width = width;
 }
+	
+Ti.Gesture.addEventListener('orientationchange', updateWindowSize);
+	
+/*
+ * Set WindowSize based on screen size (see function below)
+ */
+updateWindowSize();
+
 
 /**
  * Open the main application Window
